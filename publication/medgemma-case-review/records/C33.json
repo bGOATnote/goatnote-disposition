@@ -1,0 +1,133 @@
+{
+  "id": "C33",
+  "message": "65M, type 2 diabetes. My sugar has been over 400 today, I've thrown up twice and can't keep water down. I feel awful.",
+  "title": "65M, type 2 diabetes. My sugar has been over 400 today, I've thrown up twice and can't keep water d…",
+  "inputSHA256": "67199ed3cc826af5d9efc9f9b0d01af4927333824092cf8d77a87360572749b0",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": [
+      "EMERGENCY_NOW"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Glucose >400 with repeated vomiting and inability to keep fluids down suggests possible DKA/HHS and dehydration; needs same-day emergency evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C33-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C33-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "High glucose, vomiting, dehydration symptoms require immediate attention.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C33-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C33-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "URGENT_ESCALATION"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "A 65-year-old with type 2 diabetes reports glucose over 400, repeated vomiting and inability to keep water down, a combination consistent with a hyperglycemic emergency (DKA or hyperosmolar state) requiring immediate IV fluids and labs.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "EMERGENCY_NOW",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C33-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [
+      {
+        "originalDisposition": "EMERGENCY_NOW",
+        "disposition": "URGENT_ESCALATION",
+        "directive": "Seek emergency department assessment now. Do not wait for a message reply; call 911 if you cannot travel safely.",
+        "label": "Issued early action; not a completed release"
+      }
+    ],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Severe hyperglycemia with vomiting and inability to retain fluids indicates possible DKA or hyperosmolar state requiring immediate medical attention.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C33-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C33-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C33-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Severe hyperglycemia with vomiting and inability to retain fluids indicates possible DKA or hyperosmolar state requiring immediate medical attention.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C33-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C33-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C33-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Blood sugar over 400 with vomiting and inability to keep fluids down may indicate a life-threatening hyperglycemic crisis and dehydration. Immediate emergency department evaluation is needed.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C33-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C33-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C33-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Blood sugar over 400 with vomiting and inability to keep water down may indicate a life-threatening diabetic crisis and dehydration. Go to an emergency department now.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C33-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C33-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C33-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

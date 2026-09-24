@@ -6,7 +6,7 @@ import type { StrippedRun } from "../../../src/stripped/contract.ts";
 function request(body: unknown = { message: "Synthetic message" }, headers: Record<string, string> = {}, url = "http://localhost:4120/api/stripped") {
   return new Request(url, {
     method: "POST",
-    headers: { host: "localhost:4120", origin: "http://localhost:4120", "x-counsel-review": "local-v1", "content-type": "application/json", ...headers },
+    headers: { host: "localhost:4120", origin: "http://localhost:4120", "x-goatnote-review": "local-v1", "content-type": "application/json", ...headers },
     body: JSON.stringify(body),
   });
 }
@@ -28,7 +28,7 @@ test("stripped HTTP endpoint accepts only local same-origin requests before exec
     { origin: "https://attacker.invalid" },
     { origin: "" },
     { host: "attacker.invalid" },
-    { "x-counsel-review": "" },
+    { "x-goatnote-review": "" },
     { "sec-fetch-site": "cross-site" },
     { "sec-fetch-site": "same-site" },
   ];

@@ -1,0 +1,126 @@
+{
+  "id": "C11",
+  "message": "I have a small itchy red rash on my forearm since I did some gardening yesterday. It's not spreading and I'm breathing fine.",
+  "title": "I have a small itchy red rash on my forearm since I did some gardening yesterday. It's not spreadin…",
+  "inputSHA256": "48dd949ddaddaf2ac622e1f2bdf4f3170b3bffc4a28a4ecedec67a87cd82c814",
+  "physician": {
+    "acceptedBuckets": [
+      "SELF_CARE"
+    ],
+    "priorAcceptedRoutes": [
+      "SELF_CARE"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "SELF_CARE",
+    "rationale": "Localized mild contact rash after gardening, not spreading, no breathing or systemic symptoms; manageable with washing, cool compresses, OTC antihistamine/hydrocortisone. Seek care if it spreads, blisters severely, or systemic symptoms develop.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C11-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C11-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "SELF_CARE",
+    "rationale": "Localized rash, no systemic symptoms or red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C11-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C11-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "URGENT_ESCALATION"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "SELF_CARE",
+    "rationale": "A small, non-spreading itchy forearm rash starting after gardening yesterday fits a localized contact reaction, and no reported feature requires clinician assessment, prescribing or examination now.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C11-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "SELF_CARE",
+    "rationale": "Mild localized rash, non‑progressive, no respiratory distress; suitable for self‑management.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C11-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C11-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C11-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "SELF_CARE",
+    "rationale": "Mild localized rash, non‑progressive, no respiratory distress; suitable for self‑management.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C11-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C11-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C11-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "SELF_CARE",
+    "rationale": "Small, localized, non-spreading itchy rash after gardening suggests mild contact irritation, with no reported urgent warning signs.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C11-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C11-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C11-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "SELF_CARE",
+    "rationale": "Small, non-spreading itchy rash after gardening without breathing difficulty suggests mild contact irritation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C11-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C11-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C11-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

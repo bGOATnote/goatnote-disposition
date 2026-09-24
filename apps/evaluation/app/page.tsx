@@ -1,6 +1,5 @@
-import { DispositionWorkbench } from "@/components/disposition-workbench";
-import { sampleMessages } from "@/lib/source-messages";
+import { redirect } from "next/navigation";
 
-export default function Page() {
-  return <DispositionWorkbench samples={sampleMessages} />;
+export default function HomePage() {
+  redirect("/stripped");
 }

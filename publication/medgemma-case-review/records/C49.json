@@ -1,0 +1,133 @@
+{
+  "id": "C49",
+  "message": "28M. Sharp pain on the left side of my chest since yesterday, worse when I take a deep breath. I did a heavy chest workout two days ago. No shortness of breath, no leg swelling, I don't smoke.",
+  "title": "28M. Sharp pain on the left side of my chest since yesterday, worse when I take a deep breath. I di…",
+  "inputSHA256": "e617eea8912e73574abfa54050b69052d9611a3bbca97f379454261cbeec9cab",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": [
+      "SAME_DAY_IN_PERSON"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "New chest pain requires same-day clinical evaluation despite likely musculoskeletal cause; cannot safely rule out cardiac or pulmonary causes via message.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C49-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C49-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Chest pain, but no red flags (SOB, leg swelling, smoking) and possible musculoskeletal cause (heavy workout).",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "TP",
+    "urgentAction": "FN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C49-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C49-raw.json",
+    "escalation": "under"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": true,
+  "v25": {
+    "disposition": null,
+    "rationale": null,
+    "failure": "CLINICIAN_REVIEW_REQUIRED",
+    "agrees": false,
+    "clinicianAction": "FN_FAILED_OUTPUT",
+    "urgentAction": "FN_FAILED_OUTPUT",
+    "status": "incomplete",
+    "originalDisposition": null,
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C49-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [
+      {
+        "originalDisposition": "SAME_DAY_IN_PERSON",
+        "disposition": "URGENT_ESCALATION",
+        "directive": "Arrange an in-person assessment today. Do not wait for an asynchronous reply.",
+        "label": "Issued early action; not a completed release"
+      }
+    ],
+    "escalation": "incomplete"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Chest pain worsened by deep breathing with recent intense workout suggests musculoskeletal strain; absence of dyspnea or edema makes urgent escalation unlikely.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "TP",
+    "urgentAction": "FN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C49-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C49-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C49-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Chest pain worsened by deep breathing with recent intense workout suggests musculoskeletal strain; absence of dyspnea or edema makes urgent escalation unlikely.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "TP",
+    "urgentAction": "FN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C49-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C49-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C49-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "A workout-related strain is possible, but new chest pain worsened by deep breathing needs same-day in-person assessment to rule out serious causes, even without shortness of breath.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C49-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C49-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C49-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "A workout-related strain is possible, but new chest pain worsened by deep breathing warrants same-day in-person assessment to exclude serious heart or lung causes.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C49-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C49-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C49-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

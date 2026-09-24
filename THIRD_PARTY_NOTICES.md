@@ -1,22 +1,17 @@
 # Third-party material
 
-This file identifies important third-party material and unresolved permissions.
-It does not grant a license or replace an upstream notice. Public source access
-is not a blanket right to reuse every file. See [DISCLOSURES.md](DISCLOSURES.md).
+This notice does not grant a license or replace upstream terms. Rebranding the
+project does not transfer ownership of source data or research material.
 
-| Material | Source record and rights status |
+| Material | Source and rights status |
 | --- | --- |
-| Assignment messages and original labels | `data/patient_messages.csv`; supplied synthetic exercise data. General redistribution terms have not been established from the brief. |
-| Clinical reference excerpts and evidence records | Source-specific citations and provenance accompany the historical corpora and outputs. A source URL does not transfer copyright or license its content. |
-| OpenEM material in historical corpora | Apache 2.0 notices are retained in [the evidence corpus](outputs/evidence-graph-development-2026-09-13/corpus/OpenEM-LICENSE-APACHE.txt) and [the RAG migration corpus](outputs/clinical-rag-v8-migration-2026-09-14/corpus/OpenEM-LICENSE-APACHE.txt). Those notices apply to the identified upstream material, not automatically to this entire repository. |
-| npm dependencies | Exact versions and integrity hashes are in `package-lock.json`. Each installed package retains its upstream license; the project does not relicense dependency code. The lockfile is an inventory, not a license audit. |
-| Counsel name, symbol and logo | Identify the intended audience. Wordmark URLs and hashes are in [asset provenance](output/submission-2026-09-15/content/assets/provenance.json); symbol provenance is in [the original GUI asset record](docs/V0_GUI.md#counsel-visual-provenance). Separate permission for reproduction is not recorded. No endorsement is claimed. |
-| Ankle photographs and Ottawa illustration | Presenter-supplied discussion assets. Ownership, any necessary subject consent and third-party publication permissions have not been independently established. They are outside the scored input. |
-| Historical architecture diagram | Presenter-supplied discussion asset; provenance is recorded. Vendor names identify technologies discussed, not a partnership or approved architecture. |
-| Local model and embedding artifacts | The workflow research records an existing Nemotron installation and provider-produced embedding vectors in their [provenance](data/research/workflow-aware-v1/nano-serving-provenance.json) and [study records](outputs/workflow-aware-disposition-2026-09-16/README.md). Model weights are not distributed in this repository. These records do not grant rights to a model or change a provider's applicable terms. |
-| Model output and Codex-assisted work | Model identifiers and generation records are retained. Model output is not a guarantee of originality or freedom from third-party rights. No exclusive ownership of all generated material is asserted. |
+| Synthetic exercise messages and original CSV labels | Supplied exercise data; the original brief describes fabricated messages. General redistribution terms have not been independently established. |
+| Physician reference labels | Presenter-authored review of known synthetic cases. Reference versions and post-output revisions are identified separately from model outputs. |
+| Saved model responses | Historical outputs shown in a clearly labeled classroom display derivative. Model identity and score context are retained; generation is not a guarantee of originality or clinical correctness. |
+| GOATnote logo and symbol | Presenter-supplied brand assets. Source filenames and hashes are recorded in [BRAND_ASSETS.md](apps/evaluation/public/BRAND_ASSETS.md). |
+| npm dependencies | Package versions and integrity hashes are recorded in `package-lock.json`. Dependencies retain their own upstream licenses. The project does not relicense them. |
+| Discussion images, if displayed | Presenter-supplied media added after evaluation. They are not scored inputs. Ownership, necessary subject consent and publication permission have not been independently verified. |
+| Historical research and source material | Original evidence is preserved separately from this sharing edition. An external source's public availability does not establish a reuse license. |
 
-Before reusing media or source excerpts outside this review, establish the
-applicable permission or other legal basis. Preserve existing attribution and
-license notices. Unresolved media and dataset permissions remain an explicit
-limitation of the public package.
+Preserve attribution and license notices for any retained upstream material.
+See [project disclosures](DISCLOSURES.md) and [research provenance](docs/RESEARCH_PROVENANCE.md).

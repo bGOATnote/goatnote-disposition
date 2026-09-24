@@ -1,0 +1,127 @@
+{
+  "id": "C03",
+  "message": "28F. It burns when I pee and I'm going a lot more often, started 2 days ago. No fever, no back pain. I'm not pregnant. I've had UTIs before.",
+  "title": "28F. It burns when I pee and I'm going a lot more often, started 2 days ago. No fever, no back pain…",
+  "inputSHA256": "9b51c9e5fee93ea7e8bebe97b91e7807416d2f06b7ec9c286a33a4fffc0dc7bb",
+  "physician": {
+    "acceptedBuckets": [
+      "ASYNC_PHYSICIAN"
+    ],
+    "priorAcceptedRoutes": [
+      "PRIORITY_ASYNC",
+      "STANDARD_ASYNC"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": "Stored response predates explicit async priority; do not invent a priority annotation."
+  },
+  "fable": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Uncomplicated UTI symptoms in non-pregnant female without fever or flank pain; needs prescription antibiotics but no same-day red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C03-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C03-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Symptoms consistent with uncomplicated UTI, no red flags requiring urgent care.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C03-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C03-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "A 28-year-old with 2 days of dysuria and increased urinary frequency, denying fever, back pain and pregnancy, likely has uncomplicated cystitis needing clinician assessment and possible antibiotic prescribing, which can safely start in messaging.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "STANDARD_ASYNC",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-live-2026-09-15/C03-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Classic lower urinary tract infection symptoms; patient reports dysuria and frequency without red flags (fever, flank pain), history of prior UTIs suggests self‑managed episode.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C03-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C03-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C03-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Classic lower urinary tract infection symptoms; patient reports dysuria and frequency without red flags (fever, flank pain), history of prior UTIs suggests self‑managed episode.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C03-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C03-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C03-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Symptoms suggest a lower UTI needing clinician review and possible antibiotics. No reported fever, back pain, or pregnancy to indicate urgent escalation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C03-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C03-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C03-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Symptoms suggest an uncomplicated UTI needing clinician assessment and possible antibiotics; no reported fever, back pain, or pregnancy.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C03-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C03-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C03-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

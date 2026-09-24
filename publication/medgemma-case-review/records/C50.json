@@ -1,0 +1,126 @@
+{
+  "id": "C50",
+  "message": "40F. My usual migraine started this morning — same one-sided throbbing and light sensitivity I always get. I'm out of sumatriptan and would like a refill.",
+  "title": "40F. My usual migraine started this morning — same one-sided throbbing and light sensitivity I alwa…",
+  "inputSHA256": "0ede5c086d3ea812a589febf64e2b33fcde3c4795b2b686a9b02453986a0b81e",
+  "physician": {
+    "acceptedBuckets": [
+      "ASYNC_PHYSICIAN"
+    ],
+    "priorAcceptedRoutes": [
+      "PRIORITY_ASYNC"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Routine refill request for established migraine medication; symptoms match her typical pattern with no red flags (no 'worst headache ever', neuro deficits, fever, or sudden onset).",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C50-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C50-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Routine medication refill request for a chronic condition.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C50-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C50-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Active, typical migraine attack with rescue sumatriptan exhausted needs time-sensitive prescribing review, which can safely start in messaging without an in-person exam.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "PRIORITY_ASYNC",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C50-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Migraine follow-up for medication refill; no acute red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C50-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C50-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C50-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Migraine follow-up for medication refill; no acute red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C50-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C50-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C50-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Sumatriptan refill request for a typical migraine, with no reported emergency red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C50-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C50-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C50-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Sumatriptan refill request for a typical migraine, with no reported emergency or same-day red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C50-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C50-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C50-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

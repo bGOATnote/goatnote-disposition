@@ -1,0 +1,131 @@
+{
+  "id": "C25",
+  "message": "42F. I flew back from Europe two days ago and now my left calf is painful, swollen, and warm compared to the other one.",
+  "title": "42F. I flew back from Europe two days ago and now my left calf is painful, swollen, and warm compar…",
+  "inputSHA256": "c27abf9be2123439aafceef82f8551fc2a42ef214a47a5a9182f9f1b29252f94",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": null,
+    "source": "explicit_2026-09-15_physician_reassessment",
+    "note": "The physician explicitly accepts URGENT_ESCALATION at the three-bucket level. No same-day versus emergency subdivision was supplied."
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Unilateral calf pain, swelling, and warmth after recent long-haul flight is a classic presentation of possible DVT, which requires same-day evaluation given risk of pulmonary embolism.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C25-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C25-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Symptoms suggestive of DVT (Deep Vein Thrombosis), a potential emergency.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C25-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C25-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": null,
+    "rationale": null,
+    "failure": "CLINICIAN_REVIEW_REQUIRED",
+    "agrees": false,
+    "clinicianAction": "FN_FAILED_OUTPUT",
+    "urgentAction": "FN_FAILED_OUTPUT",
+    "status": "incomplete",
+    "originalDisposition": null,
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C25-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [
+      {
+        "originalDisposition": "EMERGENCY_NOW",
+        "disposition": "URGENT_ESCALATION",
+        "directive": "Seek emergency department assessment now. Do not wait for a message reply; call 911 if you cannot travel safely.",
+        "label": "Issued early action; not a completed release"
+      }
+    ],
+    "escalation": "incomplete"
+  },
+  "nano-r1": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Possible DVT with concerning features (recent travel + acute unilateral swelling/warmth); requires immediate evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C25-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C25-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C25-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Possible DVT with concerning features (recent travel + acute unilateral swelling/warmth); requires immediate evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C25-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C25-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C25-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "One-sided calf pain, swelling, and warmth after a long flight raise concern for a deep vein thrombosis (blood clot), requiring urgent same-day evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C25-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C25-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C25-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "One-sided calf pain, swelling, and warmth after recent air travel raise concern for a deep vein thrombosis (blood clot), requiring urgent same-day evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C25-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C25-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C25-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createStrippedWorkflow } from "../src/stripped/workflow.ts";
-import { buildRequest as frozenRequest } from "../scripts/stripped-3bucket-baseline.mjs";
+import { buildRequest as frozenRequest } from "./fixtures/fable-protocol.mjs";
 
 const secret = "TEST_API_KEY_CANARY_4961";
 const final = { disposition: "ASYNC_PHYSICIAN", rationale: "Synthetic fixture rationale; preserve these words exactly." };

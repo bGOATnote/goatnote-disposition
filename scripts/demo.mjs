@@ -52,13 +52,8 @@ export async function assertDemoPortAvailable(port = DEMO_PORT) {
 export function offlineDemoGuide(root = repositoryRoot) {
   return [
     "Saved demonstration artifacts (offline; no server, API key or new model calls):",
-    join(root, "output/submission-2026-09-15/README.md"),
-    join(root, "output/submission-2026-09-15/counsel-disposition-take-home.pdf"),
-    join(root, "output/submission-2026-09-15/counsel-disposition-adjudication-v3.xlsx"),
-    join(root, "outputs/stripped-3bucket-fable-2026-09-15"),
-    join(root, "publication/workflow-study-review/index.html"),
     join(root, "publication/medgemma-case-review/index.html"),
-    join(root, "docs/WORKFLOW_AWARE_RESULTS_2026-09-16.md"),
+    join(root, "docs/GUI_ACCESS.md"),
     `Open these saved files directly. They do not start the live GUI. See ${guide}.`,
   ].join("\n");
 }

@@ -1,0 +1,126 @@
+{
+  "id": "C38",
+  "message": "22F. Following up on my ankle sprain from last week — it's improving. Just wondering how much ibuprofen I can safely take and for how long.",
+  "title": "22F. Following up on my ankle sprain from last week — it's improving. Just wondering how much ibupr…",
+  "inputSHA256": "14187def66b19e9c60c11d8763664e2845e491d242f6f9350ef58ceb701de6fe",
+  "physician": {
+    "acceptedBuckets": [
+      "SELF_CARE"
+    ],
+    "priorAcceptedRoutes": [
+      "STANDARD_ASYNC"
+    ],
+    "source": "explicit_2026-09-15_physician_reassessment",
+    "note": "The physician corrects the prior ASYNC_PHYSICIAN reference to SELF_CARE and requires pregnancy precautions in any medication guidance. Disposition agreement does not establish that the frozen rationale meets that requirement."
+  },
+  "fable": {
+    "disposition": "SELF_CARE",
+    "rationale": "Improving ankle sprain with a general OTC ibuprofen dosing question; no red flags. Standard guidance (e.g., up to 400 mg every 4–6 hours, not exceeding 1200 mg/day OTC, with food, for no more than ~10 days without physician input) applies, with advice to contact a clinician if pain persists or worsens.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C38-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C38-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Medication question (ibuprofen dosage/duration) related to a non-urgent follow-up.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C38-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C38-raw.json",
+    "escalation": "over"
+  },
+  "csv": {
+    "disposition": "SELF_CARE"
+  },
+  "dispositionDisagrees": true,
+  "v25": {
+    "disposition": "SELF_CARE",
+    "rationale": "A 22-year-old with an improving ankle sprain asking about over-the-counter ibuprofen use can follow package labelling with a clear safety net, and no decision-critical clinician task is reported.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C38-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Follow-up on improving ankle sprain; patient seeks dosage guidance, not urgent.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C38-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C38-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C38-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "over"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Follow-up on improving ankle sprain; patient seeks dosage guidance, not urgent.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C38-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C38-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C38-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "over"
+  },
+  "astra-xhigh": {
+    "disposition": "SELF_CARE",
+    "rationale": "Improving ankle sprain with a routine question about OTC ibuprofen dosing and duration; no reported red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C38-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C38-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C38-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "SELF_CARE",
+    "rationale": "Improving ankle sprain with a routine question about OTC ibuprofen dosing and duration; no reported red flags or refill request.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C38-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C38-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C38-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

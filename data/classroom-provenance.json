@@ -1,0 +1,12 @@
+{
+  "schema": "goatnote-classroom-provenance/v1",
+  "edition": "GOATnote Disposition",
+  "created": "2026-09-24",
+  "sourceCommit": "6eac585c10ad8cfa9adbedcd00defcfdf47931b4",
+  "originalSnapshotSHA256": "569dffe239e2f2451cdf8bc6375b1874306db914e7b82ea4bc55abe21e5fbfbe",
+  "sourceViewerSHA256": "8829787f61faf241a251f6201527e0fa47e59597e9825fbac2c3c37621b25faa",
+  "caseProjectionSHA256": "8aabe87f1a3652ca89beda0d0ff3cf409c840b5c9f630a253911382b7309826f",
+  "clinicalDataChanges": false,
+  "newInferenceCalls": 0,
+  "scope": "Classroom display derivative. Exact original archive retained separately. No original frozen evidence hashes were rewritten. Full historical replay is outside this edition."
+}

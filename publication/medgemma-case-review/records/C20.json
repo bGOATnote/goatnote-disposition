@@ -1,0 +1,133 @@
+{
+  "id": "C20",
+  "message": "70M on warfarin. I fell and hit my head yesterday. Today I have a bad headache and I've thrown up twice.",
+  "title": "70M on warfarin. I fell and hit my head yesterday. Today I have a bad headache and I've thrown up t…",
+  "inputSHA256": "e09d9675992313489d794903652b706fa594688c16e90f126cdf97c72231808b",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": [
+      "EMERGENCY_NOW"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Anticoagulated 70-year-old with head trauma followed by worsening headache and vomiting—red flags for intracranial hemorrhage requiring immediate emergency evaluation and CT imaging.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C20-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C20-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Patient on warfarin with head trauma, headache, and vomiting requires urgent evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C20-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C20-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "URGENT_ESCALATION"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "A 70-year-old on warfarin with head trauma yesterday now has a bad headache and two episodes of vomiting, which requires immediate emergency CT imaging for possible intracranial bleeding.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "EMERGENCY_NOW",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C20-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [
+      {
+        "originalDisposition": "EMERGENCY_NOW",
+        "disposition": "URGENT_ESCALATION",
+        "directive": "Seek emergency department assessment now. Do not wait for a message reply; call 911 if you cannot travel safely.",
+        "label": "Issued early action; not a completed release"
+      }
+    ],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Head injury with vomiting, headache, and anticoagulation indicates possible serious bleed; requires urgent evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C20-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C20-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C20-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Head injury with vomiting, headache, and anticoagulation indicates possible serious bleed; requires urgent evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C20-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C20-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C20-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Head injury while on warfarin, followed by severe headache and vomiting, raises concern for bleeding in the brain and requires immediate emergency evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C20-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C20-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C20-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Head injury while on warfarin followed by severe headache and vomiting may indicate bleeding in the brain. Immediate emergency department evaluation is needed.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C20-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C20-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C20-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

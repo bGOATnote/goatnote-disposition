@@ -56,7 +56,7 @@ export function StrippedWorkbench({ cases, protocol }: Props) {
     try {
       const response = await fetch("/api/stripped", {
         method: "POST",
-        headers: { "Content-Type": "application/json", "x-counsel-review": "local-v1" },
+        headers: { "Content-Type": "application/json", "x-goatnote-review": "local-v1" },
         body: JSON.stringify({ message: submittedMessage }),
         signal: controller.signal,
       });
@@ -89,9 +89,8 @@ export function StrippedWorkbench({ cases, protocol }: Props) {
     <div className={styles.app}>
       <header className={styles.header}>
         <div className={styles.brand}>
-          {/* The existing static brand asset needs no image transformation. */}
-          <img src="/counsel-symbol.svg" width="50" height="51" alt="" />
-          <div><p className={styles.eyebrow}>Independent take-home project</p><h1>Disposition</h1></div>
+          <img src="/goatnote-logo.svg" width="192" height="48" alt="GOATnote" />
+          <div><p className={styles.eyebrow}>Bioengineering research demo</p><h1>Disposition</h1></div>
         </div>
         <p className={styles.model}>Fable 5.1 <span aria-hidden="true">·</span> {protocol.effort} effort</p>
       </header>
@@ -131,7 +130,7 @@ export function StrippedWorkbench({ cases, protocol }: Props) {
         </div>
         <footer className={styles.footer}>
           <p>Synthetic-message research demo · Not for patient care.</p>
-          <p>Prepared for discussion with Counsel Health. No institutional or vendor endorsement. <a href="https://github.com/bGOATnote/counselcodex/blob/main/DISCLOSURES.md" target="_blank" rel="noreferrer">Project disclosures</a> · <a href="https://github.com/bGOATnote/counselcodex/blob/main/docs/GUI_ACCESS.md" target="_blank" rel="noreferrer">Setup and saved results</a></p>
+          <p>Prepared for Professor William Duffy’s bioengineering class at the University of Memphis. No institutional or vendor endorsement. <a href="https://github.com/bGOATnote/goatnote-disposition/blob/main/DISCLOSURES.md" target="_blank" rel="noreferrer">Project disclosures</a> · <a href="https://github.com/bGOATnote/goatnote-disposition/blob/main/docs/GUI_ACCESS.md" target="_blank" rel="noreferrer">Setup and saved results</a></p>
           <details><summary>Model configuration</summary><dl className={styles.metadata}><dt>Model</dt><dd>{protocol.model}</dd><dt>Effort</dt><dd>{protocol.effort}</dd><dt>Prompt SHA-256</dt><dd>{protocol.promptSHA256}</dd></dl></details>
         </footer>
       </main>

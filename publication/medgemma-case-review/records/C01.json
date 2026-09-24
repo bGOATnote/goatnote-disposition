@@ -1,0 +1,126 @@
+{
+  "id": "C01",
+  "message": "Hi, I've had a runny nose and a mild sore throat for about 2 days. No fever, I'm still eating and drinking fine. Should I be worried?",
+  "title": "Hi, I've had a runny nose and a mild sore throat for about 2 days. No fever, I'm still eating and d…",
+  "inputSHA256": "0881f57f013ca6a7b53a322a424ca773d60e965cd13fcf66ab58c0dafde5bb2c",
+  "physician": {
+    "acceptedBuckets": [
+      "SELF_CARE"
+    ],
+    "priorAcceptedRoutes": [
+      "SELF_CARE"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "SELF_CARE",
+    "rationale": "Mild upper respiratory symptoms for 2 days with no fever and normal intake; no red flags. Rest, fluids, OTC symptom relief; seek care if fever, breathing difficulty, or symptoms worsen/persist beyond ~10 days.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C01-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C01-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "SELF_CARE",
+    "rationale": "Mild symptoms, no red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C01-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C01-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "SELF_CARE"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": null,
+    "rationale": null,
+    "failure": "CLINICIAN_REVIEW_REQUIRED",
+    "agrees": false,
+    "clinicianAction": "FAILED_OUTPUT_NEGATIVE_REFERENCE",
+    "urgentAction": "FAILED_OUTPUT_NEGATIVE_REFERENCE",
+    "status": "incomplete",
+    "originalDisposition": null,
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-live-2026-09-15/C01-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "incomplete"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Symptoms are mild (runny nose, sore throat) without red flags; patient is stable and can wait for routine care.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C01-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C01-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C01-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "over"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Symptoms are mild (runny nose, sore throat) without red flags; patient is stable and can wait for routine care.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C01-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C01-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C01-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "over"
+  },
+  "astra-xhigh": {
+    "disposition": "SELF_CARE",
+    "rationale": "Mild cold-like symptoms for 2 days, with no fever, normal eating and drinking, and no reported red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C01-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C01-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C01-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "SELF_CARE",
+    "rationale": "Mild symptoms for 2 days, no fever, and normal eating and drinking, with no reported red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C01-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C01-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C01-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

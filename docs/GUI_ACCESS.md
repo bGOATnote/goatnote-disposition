@@ -1,156 +1,60 @@
-# Browser presentation and live demonstration
+# Local demonstration and offline review
 
-| Surface | Entry point | Behavior |
-| --- | --- | --- |
-| Saved case review | [Public case index](https://bgoatnote.github.io/counselcodex/#index) · [standalone HTML](../publication/medgemma-case-review/index.html) | Inspect all 50 synthetic messages and saved results; no model calls. |
-| Historical architecture roadmap | [Public graphic](https://bgoatnote.github.io/counselcodex/roadmap.html) · [offline graphic](../publication/medgemma-case-review/roadmap.html) | Graphic-only page containing the supplied `goal.png`, with identical decoded pixels and stripped EXIF metadata. |
-| Live three-bucket demonstration | [http://localhost:4120/stripped](http://localhost:4120/stripped) | Requires the local setup below; each submission makes one provider call. |
+The [saved case viewer](../publication/medgemma-case-review/index.html) opens
+directly in a browser without dependencies, a server or API key. It displays
+historical outputs in a branded classroom derivative and makes no model calls.
 
-The public viewer was verified on 16 September 2026 after successful CI and
-GitHub Pages deployment. The standalone HTML also works from a checkout or after
-download. Localhost refers to the viewing computer, not the presenter’s server.
-The live launcher binds port 4120 to 127.0.0.1.
-[Publication and browser verification](CASE_REVIEW_HANDOFF_2026-09-16.md).
-[Navigation and comparison refinement](CASE_REVIEW_REFINEMENT_2026-09-16.md).
-[Two-screen viewer verification](CASE_VIEWER_SIMPLIFICATION_2026-09-16.md).
-[Browser presentation update](PRESENTATION_HUB_2026-09-16.md).
-[Astra and supplied roadmap update](ASTRA_VIEWER_ROADMAP_2026-09-16.md).
+## Run the live application
 
-## Browser presentation
-
-Open [the public index](https://bgoatnote.github.io/counselcodex/#index) or the
-[standalone HTML](../publication/medgemma-case-review/index.html). The browser can
-carry the prepared discussion: **C22 → C47 → C49 → Roadmap → Live demo**. Keep the
-PowerPoint/PDF as the detailed supplement and fallback. Cases and images work
-offline; keep `index.html` and `roadmap.html` together for offline roadmap access.
-
-The viewer has two screens: the index contains all case links, search and filters;
-a selected case shows its message and responses with the index hidden. The root
-URL and `#index` open the index. Links such as `#C22`, `#C47` and `#C49` open a case.
-
-The sticky header contains the **Prepared for** Counsel logo, **Disposition Study**,
-**Live demo**, **Roadmap**, **Repo**, **Presentation view**, and **Case index** on the
-case screen. Live demo, Roadmap and Repo open separate tabs, preserving the current
-case. Roadmap contains only the supplied architecture graphic. Presentation view enlarges the message
-and cards. **Case index**, Escape or `/` returns to the index, preserving search,
-filters and Nano repetition. Previous/Next moves through the filtered cases;
-browser Back/Forward restores the index or case screen.
-
-C22 includes the existing PowerPoint X-ray and external photograph derivatives.
-Their caption states that these are discussion images added after evaluation,
-not model inputs or verified images of C22.
-
-Physician Gold and original CSV cards show their labels and dispositions. Five
-cards show saved Fable, Astra extra high, Astra max, MedGemma and Nemotron
-responses. Each Astra run has all 50 saved outputs; the actual effort values are
-`xhigh` and `max`, not `ultra`. Both differ from Fable on C07, C19 and C47.
-**Record details** holds each configuration and source links. Under/over filters
-use all five displayed responses; **Astra ≠ Fable** matches a difference in either
-saved Astra run. The separate Fable/MedGemma filter remains available. Nano
-defaults to baseline A repetition 1, with repetition 2 available.
-
-**Historical pipeline · V25** stays collapsed and retains all 50 records,
-including 23 incomplete releases. It does not contribute to the primary filters.
-**About the study** holds reference limitations, provenance and the independent
-project disclosure. The CSV remains discussion context; agreement is not clinical
-validation.
-
-The roadmap is the historical architecture illustration, not a claim that all
-pictured components ran. The saved V25 run made zero judge calls. The selected
-live path remains one Fable call without a judge or retrieval; physician gold is
-used only for scorecards after generation, never as model context.
-
-## Live GUI
-
-On 16 September 2026, a read-only check received HTTP 200 from the local page and
-verified the source and built API route: **Get disposition** sends one native
-Anthropic request using `claude-fable-5-1`, adaptive thinking and low effort. The
-runtime retained successful prior calls with provider request IDs. This check
-made no new inference and did not revalidate current provider access. Opening
-the link alone makes no call; the saved viewer never substitutes frozen answers
-for a live result.
-
-Start from a local checkout of the public repository:
-
-```bash
-git clone https://github.com/bGOATnote/counselcodex.git
-cd counselcodex
-```
-
-If you already have a checkout, use that repository directory instead.
-
-From the repository root, use Node.js 22.18.0 (the `.nvmrc` and CI version),
-or Node.js 24.11+. Node 23 and early Node 24 releases are outside the dependency
-engine range. With nvm installed, run `nvm install && nvm use` first:
+From the repository root, use Node 22.18.0 (the `.nvmrc` version), or another
+version supported by `package.json`. Then:
 
 ```bash
 npm ci
 npm run review:build
 ```
 
-Set `ANTHROPIC_API_KEY` in the server environment or in a repository-root `.env`
-file. The file is Git-ignored. The stripped demo needs only that provider key.
-The account must also be authorized to call the exact frozen model,
-`claude-fable-5-1`, with the recorded low-effort settings. A general Anthropic
-account does not establish access to this model. The repository does not grant
-model access, and the launcher does not verify entitlement.
-
-If the provider rejects authentication or model access, preserve the error and
-use the saved artifacts below. Do not replace the model and present that output
-as the frozen Fable result; a replacement would be a separate experiment.
+Set `ANTHROPIC_API_KEY` in the server environment or repository-root `.env`.
+The key stays on the server. The provider account must be authorized for the
+configured model and settings; this repository does not provide model access.
 
 ```bash
 npm run demo:check
 npm run demo
 ```
 
-The preflight checks the Node version, installed Next.js, production build, key
-availability and loopback port. It does not print the key, validate it against a
-provider, start a server or make a model call. A successful preflight therefore
-does not establish provider authentication, credit availability or response quality.
+After the server reports ready, open
+[http://localhost:4120/stripped](http://localhost:4120/stripped).
+Localhost means the computer running the server. Keep the launcher terminal
+open and stop it with **Ctrl+C**.
 
-After Next reports **Ready**, open [http://localhost:4120/stripped](http://localhost:4120/stripped). Keep the
-terminal open. **Get disposition** makes a paid Anthropic call. The local $2 demo
-allowance and saved traces live under
-`apps/evaluation/.local/stripped-disposition/`; preserve that directory across
-restarts. Do not submit real patient information.
+`demo:check` checks local prerequisites and port availability. It does not
+validate the key with the provider or make a model call. Opening the page also
+makes no model call. **Get disposition** sends one paid provider request using
+the local demo allowance. Use only synthetic messages.
 
-Use **Ctrl+C** in the launcher terminal to stop its server. If port 4120 is
-occupied, the launcher exits with an error. It does not stop existing processes
-or select another port. Stop the server you own on 4120 and retry. A separately
-started server on 4121 is not the canonical handoff; the launcher leaves it
-untouched. The separate Mastra Studio server is not needed for this demo.
+## Read the result
 
-Rebuild with `npm run review:build` after changing GUI or workflow source. The
-launcher runs the existing production build; it does not silently rebuild it.
+The response is one route and a short rationale. Expand **Request & response
+trace** for the request, returned text, usage, timing and run/provider IDs.
+Editing clears the old answer; every submission is independent. A routing label
+does not create a clinician handoff or deliver treatment.
 
-## Saved artifacts: offline review
+Requests and responses are retained locally under
+`apps/evaluation/.local/stripped-disposition/`. Keep accounting records across
+restarts. Do not commit them or use them for real patient information.
 
-```bash
-npm run demo:offline
-```
+## Troubleshooting
 
-This command only prints saved-file locations and exits. It needs no API key,
-installed application dependencies, production build or listening server.
-Node is needed to run the helper; the documents can also be opened directly:
+- **Missing dependencies or build:** run `npm ci` and `npm run review:build`
+  from this repository's root. Rebuild after source changes.
+- **Port 4120 occupied:** stop the server you own on that port and retry. The
+  launcher does not stop other processes or select another port.
+- **Authentication or model access rejected:** preserve the error and use the
+  saved case viewer. A replacement model is a different experiment.
+- **No provider key available:** use `npm run demo:offline` to print saved-file
+  locations, or open the standalone HTML directly.
 
-- [Submission package](../output/submission-2026-09-15/README.md)
-- [Presentation PDF](../output/submission-2026-09-15/counsel-disposition-take-home.pdf)
-- [Revised adjudication workbook](../output/submission-2026-09-15/counsel-disposition-adjudication-v3.xlsx)
-- [Frozen Fable requests, outputs and scorecards](../outputs/stripped-3bucket-fable-2026-09-15/)
-- [Saved case viewer](../publication/medgemma-case-review/index.html) and [roadmap](../publication/medgemma-case-review/roadmap.html): keep both HTML files in the same directory; the viewer embeds all 50 messages, saved responses and C22 images
-- [Offline workflow-study viewer](../publication/workflow-study-review/README.md): download `index.html` and open it directly in a browser; all 98 messages and 1,568 saved decisions are embedded, with no server, account or external request
-
-These are saved research artifacts, not a live replay or a new provider run.
-The live GUI does not substitute frozen answers when configuration is missing.
-For the older deterministic command-line rules demonstration, use
-`npm run demo:rules`; it is a separate historical workflow.
-
-## Data flow and disclosures
-
-Live message text travels from the browser to the local server, then to Anthropic.
-Local run files preserve synthetic inputs and outputs. Loopback hosting is not
-offline inference or a privacy certification. See [project disclosures](../DISCLOSURES.md)
-and [the security boundary](../SECURITY.md). Opening the page alone does not make
-a model call. A selected synthetic case and any edits are the complete user
-message; each submit is independent.
+The local server binds to `127.0.0.1`. Do not expose it publicly. Live message
+text travels to Anthropic, so loopback hosting is not offline inference.
+See [security](../SECURITY.md) and [disclosures](../DISCLOSURES.md).

@@ -3,7 +3,7 @@ import { sampleMessages } from "../../lib/source-messages";
 import { PROTOCOL } from "../../../../src/stripped/protocol";
 
 export const metadata = {
-  title: "Independent disposition demo — Fable",
+  title: "GOATnote Disposition — Bioengineering demo",
   description: "Independent synthetic-message research demonstration: one message, one disposition and a short rationale. Not for patient care.",
 };
 

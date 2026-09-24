@@ -1,0 +1,133 @@
+{
+  "id": "C27",
+  "message": "70F. Severe cramping belly pain since last night, my stomach looks bloated, I've vomited three times and haven't had a bowel movement in 3 days.",
+  "title": "70F. Severe cramping belly pain since last night, my stomach looks bloated, I've vomited three time…",
+  "inputSHA256": "7fd3e3d094520511017b904c89712d4982b1db54d03f1388e6965ecfba9e692a",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": [
+      "EMERGENCY_NOW"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Elderly patient with severe abdominal pain, distension, repeated vomiting, and no bowel movement for 3 days suggests possible bowel obstruction; requires same-day/emergency evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C27-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C27-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Severe abdominal pain, vomiting, and lack of bowel movement suggest a potential obstruction or other serious condition requiring urgent evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C27-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C27-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "URGENT_ESCALATION"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "A 70-year-old with severe cramping abdominal pain since last night, visible distension, three episodes of vomiting and no bowel movement for 3 days reports the cardinal pattern of bowel obstruction, which requires immediate emergency imaging, decompression and surgical assessment.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "EMERGENCY_NOW",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C27-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [
+      {
+        "originalDisposition": "EMERGENCY_NOW",
+        "disposition": "URGENT_ESCALATION",
+        "directive": "Seek emergency department assessment now. Do not wait for a message reply; call 911 if you cannot travel safely.",
+        "label": "Issued early action; not a completed release"
+      }
+    ],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Severe abdominal cramping with vomiting, distension, and no BM for 3 days suggests possible obstruction or serious pathology requiring immediate evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C27-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C27-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C27-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Severe abdominal cramping with vomiting, distension, and no BM for 3 days suggests possible obstruction or serious pathology requiring immediate evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C27-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C27-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C27-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Severe abdominal pain, bloating, repeated vomiting, and no bowel movement raise concern for bowel obstruction and require immediate emergency evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C27-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C27-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C27-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Severe abdominal pain, bloating, repeated vomiting, and no bowel movement raise concern for bowel obstruction and require immediate emergency department evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C27-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C27-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C27-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

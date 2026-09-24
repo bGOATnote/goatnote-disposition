@@ -7,15 +7,21 @@ import {
   SYSTEM_PROMPT as baselinePrompt,
   buildRequest as baselineRequest,
   parseDisposition as baselineParse,
-} from "../scripts/stripped-3bucket-baseline.mjs";
+} from "./fixtures/fable-protocol.mjs";
 
-const archive = new URL("../outputs/stripped-3bucket-fable-2026-09-15/", import.meta.url);
+const archive = new URL("./fixtures/fable-2026-09-15/", import.meta.url);
 const readJSON = name => JSON.parse(readFileSync(new URL(name, archive), "utf8"));
 const prediction = { disposition: "ASYNC_PHYSICIAN", rationale: "Synthetic explanation." };
 const response = (value = prediction, extra = {}) => ({
   stop_reason: "end_turn",
   content: [{ type: "text", text: JSON.stringify(value) }],
   ...extra,
+});
+
+test("selected frozen fixture bytes retain their recorded provenance", () => {
+  for (const [name, expected] of Object.entries(readJSON("manifest.json").artifacts)) {
+    assert.equal(createHash("sha256").update(readFileSync(new URL(name, archive))).digest("hex"), expected, name);
+  }
 });
 
 test("GUI freezes the selected Fable model, low effort, and original prompt bytes", () => {

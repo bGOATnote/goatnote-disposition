@@ -1,0 +1,126 @@
+{
+  "id": "C26",
+  "message": "19M. Scratchy throat since yesterday, no fever, no trouble swallowing. Just annoying. Anything I can take?",
+  "title": "19M. Scratchy throat since yesterday, no fever, no trouble swallowing. Just annoying. Anything I ca…",
+  "inputSHA256": "56c55ebac2f50864a223aac7c816e482201f68f2a6e881e7caa28b716723d8c5",
+  "physician": {
+    "acceptedBuckets": [
+      "SELF_CARE"
+    ],
+    "priorAcceptedRoutes": [
+      "SELF_CARE"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "SELF_CARE",
+    "rationale": "Mild scratchy throat for one day without fever, difficulty swallowing, or other red flags in a healthy 19-year-old; appropriate for OTC lozenges, warm fluids, rest, and monitoring, with escalation if symptoms worsen or persist beyond a week.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C26-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C26-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "SELF_CARE",
+    "rationale": "Mild symptoms, no red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C26-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C26-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "SELF_CARE"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "SELF_CARE",
+    "rationale": "Mild scratchy throat of one day in a 19-year-old with reported no fever and no trouble swallowing can be managed with over-the-counter symptom relief and a clear action-based safety net.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C26-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Symptom is mild and non-urgent (scratchy throat without fever or dysphagia), but patient seeks guidance on treatment, fitting async physician interaction.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C26-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C26-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C26-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "over"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Symptom is mild and non-urgent (scratchy throat without fever or dysphagia), but patient seeks guidance on treatment, fitting async physician interaction.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C26-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C26-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C26-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "over"
+  },
+  "astra-xhigh": {
+    "disposition": "SELF_CARE",
+    "rationale": "Mild scratchy throat since yesterday without fever or difficulty swallowing; no reported red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C26-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C26-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C26-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "SELF_CARE",
+    "rationale": "Mild throat irritation since yesterday without fever or difficulty swallowing is appropriate for home symptom relief.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C26-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C26-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C26-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

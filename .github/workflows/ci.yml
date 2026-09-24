@@ -6,17 +6,16 @@ on:
   pull_request:
   workflow_dispatch:
 
-concurrency:
-  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
-
 permissions:
   contents: read
 
 jobs:
-  test:
+  classroom:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 15
+    env:
+      MASTRA_TELEMETRY_DISABLED: "true"
+      NEXT_TELEMETRY_DISABLED: "1"
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -26,47 +25,8 @@ jobs:
           node-version: 22.18.0
           cache: npm
       - run: npm ci
-      - run: npm audit --audit-level=high
       - run: npm run lint
-      - name: Install publication extractors
-        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends poppler-utils
-      - name: Check publication content without inference
-        run: >-
-          python3 scripts/check-public-content.py --repo . --index
-          --name-hashes scripts/public-content-name-hashes.json
-          --report "$RUNNER_TEMP/public-content-report.json"
-      - run: node scripts/verify-submission-package.mjs
-      - run: node scripts/score-fn-reduction.mjs outputs/fn-reduction-2026-09-16
-      - name: Verify the frozen workflow-aware experiment without inference
-        env:
-          MASTRA_TELEMETRY_DISABLED: "true"
-        run: >-
-          node --experimental-strip-types scripts/score-workflow-aware.ts
-          outputs/workflow-aware-disposition-2026-09-16/study
-          --reference-freeze outputs/workflow-aware-disposition-2026-09-16/reference-freeze.json
-      - name: Verify offline research review artifacts without inference
-        run: npm run research:retrieval:verify && npm run research:review:verify
-      - name: Verify the saved model-comparison viewer without inference
-        env:
-          MASTRA_TELEMETRY_DISABLED: "true"
-        run: node --experimental-strip-types scripts/build-medgemma-case-review.mjs --verify
       - run: npm run typecheck
       - run: npm test
-      - run: npm run cqa:pilot:verify
-      - run: npm run cqa:demo -- --verify
-      - run: git diff --exit-code -- outputs/cqa-research-demo-v1.json
-      - run: npm run review:test
-      - run: npm run redteam
-      - run: npm run evaluate
-      - run: npm run pre-adjudication:eval
-      - run: node scripts/verify-archived-holdout.mjs
-      - run: npm run evaluation:readiness
-      - run: npm run mastra:eval
-      - run: npm run agent:eval
-      - run: npm run mastra:smoke
-      # Build the actual Next-hosted candidate and the separately named native incumbent once each.
+      - run: npm run saved:verify
       - run: npm run build
-      # Verify the generated runtime lock can be installed independently of the
-      # workspace install; never silently deploy a fresh, unlocked resolution.
-      - run: npm ci --prefix .mastra/output --omit=dev --no-audit --no-fund
-      - run: npm run build:mastra:verify

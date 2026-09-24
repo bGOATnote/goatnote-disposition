@@ -1,0 +1,126 @@
+{
+  "id": "C47",
+  "message": "45F. I've had trouble falling asleep for the last month or so. Work has been stressful. I'm functioning but tired all day.",
+  "title": "45F. I've had trouble falling asleep for the last month or so. Work has been stressful. I'm functio…",
+  "inputSHA256": "eb18163721c69f2d876309e47f1b98b28dcd728022039e472662221b042b3057",
+  "physician": {
+    "acceptedBuckets": [
+      "ASYNC_PHYSICIAN"
+    ],
+    "priorAcceptedRoutes": [
+      "STANDARD_ASYNC"
+    ],
+    "source": "explicit_2026-09-15_physician_reassessment",
+    "note": "The physician retains ASYNC_PHYSICIAN. Fable SELF_CARE is a false negative for clinician action, rather than an emergency-escalation miss."
+  },
+  "fable": {
+    "disposition": "SELF_CARE",
+    "rationale": "Subacute stress-related insomnia in a functioning adult with no red flags (no mood/suicidality concerns, no daytime impairment beyond fatigue). Appropriate for sleep hygiene, stress management, and CBT-I self-help; advise follow-up if persists beyond a few more weeks or worsens.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FN",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C47-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C47-raw.json",
+    "escalation": "under"
+  },
+  "medgemma": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Non-urgent sleep issue, requires physician evaluation but not immediate escalation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C47-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C47-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": true,
+  "v25": {
+    "disposition": "SELF_CARE",
+    "rationale": "One month of sleep-onset difficulty during work stress with preserved function and no reported decision-critical features can start with sleep-habit measures and a clear escalation trigger.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C47-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  },
+  "nano-r1": {
+    "disposition": "SELF_CARE",
+    "rationale": "Sleep difficulty with stress-related fatigue, no acute red flags",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C47-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C47-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C47-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  },
+  "nano-r2": {
+    "disposition": "SELF_CARE",
+    "rationale": "Sleep difficulty with stress-related fatigue, no acute red flags",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C47-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C47-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C47-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  },
+  "astra-xhigh": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Sleep difficulty lasting a month with daytime fatigue warrants nonurgent clinician review; no urgent red flags are reported.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C47-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C47-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C47-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Sleep difficulty lasting a month with daytime fatigue warrants nonurgent clinician assessment; no urgent red flags reported.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C47-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C47-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C47-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

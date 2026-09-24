@@ -1,0 +1,133 @@
+{
+  "id": "C17",
+  "message": "40M. I hurt my low back lifting something a week ago. Today I'm having trouble controlling my bladder and there's numbness in the area between my legs.",
+  "title": "40M. I hurt my low back lifting something a week ago. Today I'm having trouble controlling my bladd…",
+  "inputSHA256": "56059131a193e0c0c7c266211a06f34d8a8aa8fd0dcedfb685dbe6d0fd20310b",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": [
+      "EMERGENCY_NOW"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "New bladder dysfunction and saddle anesthesia after back injury are red flags for cauda equina syndrome, a surgical emergency requiring immediate evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C17-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C17-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "New onset bladder control issues and saddle anesthesia are red flags for cauda equina syndrome.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C17-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C17-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "New bladder control trouble and numbness between the legs a week after a lifting back injury are cardinal features of possible cauda equina syndrome, a surgical emergency needing immediate emergency imaging and assessment.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "EMERGENCY_NOW",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C17-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [
+      {
+        "originalDisposition": "EMERGENCY_NOW",
+        "disposition": "URGENT_ESCALATION",
+        "directive": "Seek emergency department assessment now. Do not wait for a message reply; call 911 if you cannot travel safely.",
+        "label": "Issued early action; not a completed release"
+      }
+    ],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Red flag symptoms (bladder dysfunction, saddle anesthesia) suggest cauda equina syndrome requiring immediate medical evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C17-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C17-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C17-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Red flag symptoms (bladder dysfunction, saddle anesthesia) suggest cauda equina syndrome requiring immediate medical evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C17-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C17-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C17-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "New bladder control problems and numbness between the legs with back pain suggest possible cauda equina syndrome. Go to an emergency department immediately.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C17-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C17-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C17-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "New bladder control problems and numbness between the legs with back pain are red flags for cauda equina syndrome and require emergency department evaluation now.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C17-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C17-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C17-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}
