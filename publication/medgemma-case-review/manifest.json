@@ -12,16 +12,16 @@
   "verification": "Saved projection identity, message hashes, displayed comparisons and output-file hashes. Original raw-record replay is outside this edition.",
   "artifacts": {
     "index.html": {
-      "sha256": "ed811fc59b55b7f4b3c3c9d4f967e47f52e90a6b09b06603f581002c88c614a9",
-      "bytes": 1532386
+      "sha256": "ddb0bf7e0b1d739d4c799a97259b3ccefe185cc52eaa5c05112a8e05f0fdbfce",
+      "bytes": 1532752
     },
     "README.md": {
-      "sha256": "b1fe7512e881a813ed09d4dfd9dcf1f793bd36240026ad47c21ddb2abd86e7fd",
-      "bytes": 3156
+      "sha256": "ac784df7ac6996512039fa4b5c923ee14b8ee332f4b19cd28a1efc95092ed484",
+      "bytes": 3460
     },
     "roadmap.html": {
-      "sha256": "8fa0686e003c8565c86bbf3641ad13a4da0a86c429b6981f5b87a7d276265a37",
-      "bytes": 4191
+      "sha256": "a59b928d833626b13685c3de5d7010ce3896a90d173b7f91805dd43982b99490",
+      "bytes": 4321
     },
     "cases.json": {
       "sha256": "382c5852ad161cc34d7116fd702d48729f17a10b41d231d2ee71999d30b5ec6a",

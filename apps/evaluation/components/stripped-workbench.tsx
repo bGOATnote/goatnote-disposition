@@ -130,7 +130,7 @@ export function StrippedWorkbench({ cases, protocol }: Props) {
         </div>
         <footer className={styles.footer}>
           <p>Synthetic-message research demo · Not for patient care.</p>
-          <p>Prepared for Professor William Duffy’s bioengineering class at the University of Memphis. No institutional or vendor endorsement. <a href="https://github.com/bGOATnote/goatnote-disposition/blob/main/DISCLOSURES.md" target="_blank" rel="noreferrer">Project disclosures</a> · <a href="https://github.com/bGOATnote/goatnote-disposition/blob/main/docs/GUI_ACCESS.md" target="_blank" rel="noreferrer">Setup and saved results</a></p>
+          <p>Prepared for a bioengineering class discussion at the University of Memphis. No institutional or vendor endorsement. <a href="https://github.com/bGOATnote/goatnote-disposition/blob/main/docs/STUDENT_GUIDE.md" target="_blank" rel="noreferrer">Student guide</a> · <a href="https://github.com/bGOATnote/goatnote-disposition/blob/main/DISCLOSURES.md" target="_blank" rel="noreferrer">Project disclosures</a> · <a href="https://github.com/bGOATnote/goatnote-disposition/blob/main/docs/GUI_ACCESS.md" target="_blank" rel="noreferrer">Setup and saved results</a></p>
           <details><summary>Model configuration</summary><dl className={styles.metadata}><dt>Model</dt><dd>{protocol.model}</dd><dt>Effort</dt><dd>{protocol.effort}</dd><dt>Prompt SHA-256</dt><dd>{protocol.promptSHA256}</dd></dl></details>
         </footer>
       </main>

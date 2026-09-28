@@ -6,8 +6,11 @@ responses. It needs no API key, account or running server and makes no model
 calls. Keep this folder together when sharing it.
 
 Prepared for Brandon Dent, MD's bioengineering class discussion at the
-University of Memphis with Professor William Duffy. This is an independent
+University of Memphis. Brandon's role is Enterprise Systems Architect &
+Technical Advisor to Scaling Up EMDR. This is an independent
 educational project; no faculty or university endorsement is claimed.
+The repository includes a [student guide](https://github.com/bGOATnote/goatnote-disposition/blob/main/docs/STUDENT_GUIDE.md)
+and [frontier-model evidence note](https://github.com/bGOATnote/goatnote-disposition/blob/main/docs/FRONTIER_MODELS.md).
 
 ## Navigate
 

@@ -1,13 +1,13 @@
 # Project disclosures
 
-Updated September 24, 2026.
+Updated September 28, 2026.
 
 GOATnote Disposition is an independent educational project presented by
 **Brandon Dent, MD**, with Codex assistance in implementation, tests,
-documentation and presentation preparation. It is prepared for discussion with
-Professor William Duffy's bioengineering class at the University of Memphis.
+documentation and presentation preparation. Brandon's role is
+**Enterprise Systems Architect & Technical Advisor to Scaling Up EMDR**.
+It is prepared for a bioengineering class discussion at the University of Memphis.
 No university, faculty, institutional or vendor endorsement is claimed.
-A former University of Nevada, Reno role is biographical, not a current affiliation.
 
 ## Clinical and evaluation scope
 
