@@ -24,11 +24,13 @@ notes and the [frontier evidence note](../docs/FRONTIER_MODELS.md).
 The editable deck retains the supplied presentation's canvas and selected
 photographs, with official GOATnote branding. It uses Montserrat throughout.
 Four idea titles use teal, blue, amber and magenta. Slides omit personal names,
-course labels and page numbers. ScribeGOAT2 and LostBench each appear in one
+course labels. Every slide is numbered 1/16 through 16/16 and includes a relevant image, editable chart or table, or QR graphic. ScribeGOAT2 and LostBench each appear in one
 brief caption; HealthCraft is an optional note. Install
 [Montserrat](https://fonts.google.com/specimen/Montserrat) on another computer
 if its presentation app does not provide that font. C22 discussion images are
 explicitly separate from the synthetic case and do not establish its outcome.
+Slide 10 links its headline and viewer screenshot to the public 50-case index. The downloadable portable HTML package also opens the GOATnote viewer offline through its bundled index.html. The cover uses a transparent PNG copy of the original logo for compatibility. The slow-is-smooth section uses concrete sharps and pre-release review examples. See [illustration sources and prompts](ILLUSTRATION_SOURCES.md).
+
 The original supplied file and frozen research records were not modified.
 
 The HealthBench score is a rubric-based benchmark metric; the local 50-case

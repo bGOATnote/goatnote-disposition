@@ -1,15 +1,30 @@
 # Classroom edition verification
 
-## Four-idea presentation revision
+## Numbered presentation and functional HTML revision
 
-The presenter's updated attachment is the source for the revised 16-slide
-presentation. It uses Montserrat, four distinct idea colors and title slides,
-with no personal-name/course/page-number labels. Both native tables remain
-editable. The final package passed structural and geometry validation, was
-re-imported and rendered, and every slide was visually reviewed. The final
-text/notes scan found no personal-name or course-code labels, and every visible
-text run uses Montserrat. ScribeGOAT2 and LostBench each appear once in a brief
-caption; HealthCraft stays in notes. Clinical projection files were unchanged.
+The 16-slide presentation uses Montserrat, four idea colors, visible 1/16–16/16
+numbering, and a meaningful image, chart, table or QR on every slide. The cover
+logo is a transparent PNG, avoiding SVG fallback boxes in importing applications.
+The slow-is-smooth section uses a concrete sharps hazard, pre-release engineering
+checks and observed parser results. Personal-name and course labels remain absent.
+
+Every slide was rendered and visually reviewed after package, geometry and font
+validation. Three tables and the benchmark chart remain editable. Slide 10 has
+actual OOXML hyperlinks on its headline and screenshot. Native application link
+interaction was not verified because the application check stalled.
+
+The portable HTML version was separately checked in Chrome: both slide-10 links
+open the bundled index, browser Back returns to slide 10, all 16 slides navigate,
+and all 50 cases show five recorded responses. No browser warnings or errors.
+It uses local files and requires no inference or network fetch for the case data.
+The public viewer still serves the existing main branch until the classroom PR
+is merged, because the github-pages environment permits only main.
+
+The seven existing protocol tests passed, including 50 byte-identical request
+bodies, 50 parsed fixture replays and malformed-response rejection. Additional
+controlled fixtures rejected malformed JSON and a missing rationale and accepted
+a valid response. These are software checks, not clinical accuracy measures.
+Clinical projection files and frozen research records were unchanged.
 
 ## September 28, 2026 — classroom attribution and evidence note
 
