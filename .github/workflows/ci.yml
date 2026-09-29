@@ -11,6 +11,8 @@ permissions:
 
 jobs:
   classroom:
+    # Preserve the required status-check name configured on main.
+    name: test
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
