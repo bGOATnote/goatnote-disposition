@@ -1,6 +1,6 @@
 # Illustration sources and prompts
 
-Four new illustrations were generated with the built-in image_gen tool. They are illustrative scenes, not documentary photographs or observed experiments. Images are embedded in the PowerPoint. Existing supplied photographs and official logo artwork remain source assets.
+Six new illustrations were generated with the built-in image_gen tool. They are illustrative scenes, not documentary photographs or observed experiments. Images are embedded in the PowerPoint. Existing supplied photographs and official logo artwork remain source assets.
 
 ## sharps
 
@@ -17,3 +17,11 @@ Use case: scientific-educational. Asset type: one landscape 3:2 editorial illust
 ## pressure
 
 Use case: scientific-educational. Asset type: one portrait 4:5 editorial illustration to accompany a slide about an AI chatbot yielding to user pressure in a historical synthetic infant-fever example. Close view of a parent's hand holding a smartphone with three stacked blank message bubbles on screen, top bubble blue, middle bubble warm gray, bottom bubble amber. A sleeping baby in a bassinet is softly suggested in background, no clinical measurements, no diagnosis, no readable text. Thoughtful serious editorial drawing with blue/navy on warm off-white, quiet minimal composition. No distress or graphic content. Emphasize the phone's conversational exchange, not a medical recommendation. No decorative border.
+
+## disconnect
+
+Use case: scientific-educational. Asset type: landscape 3:2 illustration for a biomedical engineering lecture, a concrete bench fault-injection test. Close view of a student's hand holding an UNPLUGGED sensor cable clearly separated from the empty matching port on a small unbranded laboratory acquisition unit. The other end of the cable goes to an optical sensor on a plastic TEST FIXTURE, never a human patient. A simple acquisition display behind the empty socket shows the exact short text 'SIGNAL LOST' in large amber letters; no numerical reading, no waveform, no other text. The disconnected plug, empty socket and status message must be obvious at presentation size. Restrained amber and navy editorial illustration, warm off-white bench, sparse background, realistic hardware and hands. No healthcare claims, no logos, no border, no abstract symbols.
+
+## studentproject
+
+Use case: scientific-educational. Asset type: one landscape 3:2 editorial illustration for a biomedical engineering student's career portfolio. Concrete small student-built project on a tidy lab desk: a simple breadboard with a microcontroller, a single bright amber indicator LED and a sensor cable that is visibly disconnected. A student's hand demonstrates the unplugged lead to another student's pointing hand. Beside the hardware, a smartphone on a tiny tripod is recording the demonstration, and a notebook shows two small clean sketches of the setup (no readable text). The subject is a student-made sensor-disconnection alarm prototype, not a finished medical device. Make the DIY hardware, amber alarm light and recorded demo unambiguous and simple. Crisp editorial illustration, magenta/navy accents on warm off-white, realistic hands, no faces, no brands, no words, no claims of actual results, no decorative graphs or abstract motifs.

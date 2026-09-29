@@ -6,11 +6,11 @@ The 16-slide presentation uses Montserrat, four idea colors, visible 1/16–16/1
 numbering, and a meaningful image, chart, table or QR on every slide. The cover
 logo is a transparent PNG, avoiding SVG fallback boxes in importing applications.
 The slow-is-smooth section uses a concrete sharps hazard, pre-release engineering
-checks and observed parser results. Personal-name and course labels remain absent.
+checks and an illustrated sensor-disconnect exercise. Personal-name and course labels remain absent.
 
 Every slide was rendered and visually reviewed after package, geometry and font
-validation. Three tables and the benchmark chart remain editable. Slide 10 has
-actual OOXML hyperlinks on its headline and screenshot. Native application link
+validation. The workload table and benchmark chart remain editable. Slides 13 and 15 use illustrations instead of tables. Slide 10 has
+actual OOXML hyperlinks on its headline and screenshot. Slide 16 links its QR and caption directly to public C22. Native application link
 interaction was not verified because the application check stalled.
 
 The portable HTML version was separately checked in Chrome: both slide-10 links
@@ -19,6 +19,15 @@ and all 50 cases show five recorded responses. No browser warnings or errors.
 It uses local files and requires no inference or network fetch for the case data.
 The public viewer still serves the existing main branch until the classroom PR
 is merged, because the github-pages environment permits only main.
+
+The closing QR was regenerated with a quiet zone and decoded from the exported
+slide PNG to the exact public C22 URL. At phone width, the destination opens
+without login and shows the message, references and readable saved responses.
+The index exposes all 50 cases with no horizontal overflow or browser errors.
+This is the currently published viewer, which retains its old branding pending
+publication of the classroom PR. The offline HTML caption/QR click opens bundled
+C22 instead. Other than slides 13, 15 and 16, final slide PNGs are byte-identical
+to the previously reviewed deck.
 
 The seven existing protocol tests passed, including 50 byte-identical request
 bodies, 50 parsed fixture replays and malformed-response rejection. Additional

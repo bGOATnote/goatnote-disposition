@@ -13,7 +13,7 @@ to that question after the case and engineering exercises.
 
 Use the [student guide](../docs/STUDENT_GUIDE.md), [saved case viewer](../publication/medgemma-case-review/index.html)
 and [presenter notes with sources](SPEAKER_NOTES.md). The final-slide QR points
-to the student guide on the classroom branch. The viewer works offline after
+directly to [saved case C22](https://bgoatnote.github.io/goatnote-disposition/#C22), which opens without a login and was checked at phone width. Students can read the message, compare the reference and model responses, and browse the other cases. The viewer works offline after
 cloning or downloading this edition; no provider access is needed.
 
 Public descriptions from adjacent Memphis courses and comparable graduate
@@ -23,13 +23,13 @@ notes and the [frontier evidence note](../docs/FRONTIER_MODELS.md).
 
 The editable deck retains the supplied presentation's canvas and selected
 photographs, with official GOATnote branding. It uses Montserrat throughout.
-Four idea titles use teal, blue, amber and magenta. Slides omit personal names,
+Four idea titles use teal, blue, amber and magenta. Slides omit personal names and
 course labels. Every slide is numbered 1/16 through 16/16 and includes a relevant image, editable chart or table, or QR graphic. ScribeGOAT2 and LostBench each appear in one
 brief caption; HealthCraft is an optional note. Install
 [Montserrat](https://fonts.google.com/specimen/Montserrat) on another computer
 if its presentation app does not provide that font. C22 discussion images are
 explicitly separate from the synthetic case and do not establish its outcome.
-Slide 10 links its headline and viewer screenshot to the public 50-case index. The downloadable portable HTML package also opens the GOATnote viewer offline through its bundled index.html. The cover uses a transparent PNG copy of the original logo for compatibility. The slow-is-smooth section uses concrete sharps and pre-release review examples. See [illustration sources and prompts](ILLUSTRATION_SOURCES.md).
+Slide 10 links its headline and viewer screenshot to the public 50-case index. The downloadable portable HTML package also opens the GOATnote viewer offline through its bundled index.html. The cover uses a transparent PNG copy of the original logo for compatibility. The slow-is-smooth section uses concrete sharps and pre-release review examples. Slide 13 shows a deliberate sensor disconnect; slide 15 proposes a small alarm project that students can demonstrate. These are illustrated bench examples, not measured device results. See [illustration sources and prompts](ILLUSTRATION_SOURCES.md).
 
 The original supplied file and frozen research records were not modified.
 
@@ -40,4 +40,4 @@ urgent/same-day escalation, not a uniform emergency timing requirement.
 
 Revised from the presenter's updated, image-led attachment, with Codex assistance
 in editing and layout. The four section questions connect error rates, evidence,
-acceptance checks and verifiable student work.
+fault testing and a concrete student project.
