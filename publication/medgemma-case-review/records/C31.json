@@ -1,0 +1,133 @@
+{
+  "id": "C31",
+  "message": "50F. Bad headache since yesterday with a fever of 101.5, my neck is stiff and it hurts to look at bright light.",
+  "title": "50F. Bad headache since yesterday with a fever of 101.5, my neck is stiff and it hurts to look at b…",
+  "inputSHA256": "a9a3c4edc4414712dd96458ba9f9323cd2847a5c7d6fac4de29ad925d26091a1",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": [
+      "EMERGENCY_NOW"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Headache with fever, neck stiffness, and photophobia is a classic meningitis presentation requiring immediate emergency evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C31-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C31-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Symptoms (headache, fever, stiff neck, photophobia) suggest possible meningitis, requiring urgent evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C31-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C31-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "URGENT_ESCALATION"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": null,
+    "rationale": null,
+    "failure": "CLINICIAN_REVIEW_REQUIRED",
+    "agrees": false,
+    "clinicianAction": "FN_FAILED_OUTPUT",
+    "urgentAction": "FN_FAILED_OUTPUT",
+    "status": "incomplete",
+    "originalDisposition": null,
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C31-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [
+      {
+        "originalDisposition": "EMERGENCY_NOW",
+        "disposition": "URGENT_ESCALATION",
+        "directive": "Call 911 now. Do not drive yourself or wait for a message reply.",
+        "label": "Issued early action; not a completed release"
+      }
+    ],
+    "escalation": "incomplete"
+  },
+  "nano-r1": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Classic meningitis triad: severe headache, fever >38°C, photophobia, nuchal rigidity—requires immediate medical evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C31-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C31-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C31-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Classic meningitis triad: severe headache, fever >38°C, photophobia, nuchal rigidity—requires immediate medical evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C31-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C31-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C31-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Headache with fever, stiff neck, and light sensitivity may indicate meningitis and requires immediate emergency evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C31-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C31-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C31-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Headache with fever, stiff neck, and light sensitivity could indicate meningitis. Seek emergency care now.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C31-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C31-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C31-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

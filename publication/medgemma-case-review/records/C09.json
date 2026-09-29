@@ -1,0 +1,126 @@
+{
+  "id": "C09",
+  "message": "30F, I'm 32 weeks pregnant. I've had a bad headache that won't go away, my vision is a little blurry, and my hands and face look puffy.",
+  "title": "30F, I'm 32 weeks pregnant. I've had a bad headache that won't go away, my vision is a little blurr…",
+  "inputSHA256": "61e8b48550817a1bb7a8c62a53555d1466afb9671f864c747343faa96034cecd",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": [
+      "EMERGENCY_NOW"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Persistent headache, visual changes, and facial/hand swelling at 32 weeks pregnancy are red flags for preeclampsia requiring same-day emergency evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C09-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C09-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Pregnant patient with headache, vision changes, and swelling requires immediate evaluation for preeclampsia.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C09-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C09-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "URGENT_ESCALATION"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": null,
+    "rationale": null,
+    "failure": "CLINICIAN_REVIEW_REQUIRED",
+    "agrees": false,
+    "clinicianAction": "FN_FAILED_OUTPUT",
+    "urgentAction": "FN_FAILED_OUTPUT",
+    "status": "incomplete",
+    "originalDisposition": null,
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C09-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "incomplete"
+  },
+  "nano-r1": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Symptoms (headache, visual changes, facial/hand swelling) suggest possible preeclampsia in late pregnancy; requires immediate evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C09-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C09-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C09-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Symptoms (headache, visual changes, facial/hand swelling) suggest possible preeclampsia in late pregnancy; requires immediate evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C09-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C09-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C09-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Persistent headache, blurry vision, and hand/face swelling at 32 weeks are warning signs of preeclampsia. Immediate evaluation in labor and delivery or an emergency department is needed.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C09-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C09-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C09-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Persistent headache, blurry vision, and face/hand swelling at 32 weeks raise concern for preeclampsia and require immediate evaluation in labor and delivery or an emergency department.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C09-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C09-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C09-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "id": "C13",
+  "message": "55M. My right hand has been numb and tingly for a few days, worse at night. No weakness anywhere, no face drooping, my speech is normal.",
+  "title": "55M. My right hand has been numb and tingly for a few days, worse at night. No weakness anywhere, n…",
+  "inputSHA256": "5111bddf95a14bd4755ec8ee19ce23d151627e377ead402a381fdaac0cec952b",
+  "physician": {
+    "acceptedBuckets": [
+      "ASYNC_PHYSICIAN"
+    ],
+    "priorAcceptedRoutes": [
+      "PRIORITY_ASYNC"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Several days of unilateral hand numbness/tingling worse at night suggests a likely benign cause such as carpal tunnel syndrome, and the patient denies stroke red flags (no weakness, facial droop, or speech change). Not an emergency, but persistent neurological symptoms warrant physician evaluation rather than self-care alone.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C13-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C13-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Neurological symptoms without acute red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C13-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C13-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "SELF_CARE",
+    "rationale": "A few days of right-hand numbness and tingling worse at night, with reported absence of weakness, facial droop or speech change, fits a common nerve-compression pattern that can start with self-care and a clear escalation plan rather than urgent or clinician-required care now.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C13-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Numbness/tingling in right hand with nocturnal worsening and absence of focal deficits or speech changes suggests possible peripheral nerve compression (e.g., cervical radiculopathy) requiring evaluation but not emergent.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C13-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C13-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C13-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Numbness/tingling in right hand with nocturnal worsening and absence of focal deficits or speech changes suggests possible peripheral nerve compression (e.g., cervical radiculopathy) requiring evaluation but not emergent.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C13-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C13-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C13-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Persistent hand numbness warrants clinician review. Nighttime worsening suggests possible nerve compression, with no reported emergency neurologic red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C13-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C13-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C13-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Persistent hand numbness warrants nonurgent clinician review. Nighttime worsening suggests possible nerve compression, with no reported weakness, facial droop, or speech changes.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C13-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C13-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C13-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

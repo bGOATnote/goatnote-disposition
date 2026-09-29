@@ -1,0 +1,126 @@
+{
+  "id": "C22",
+  "message": "24M. I rolled my ankle playing basketball last night. It's swollen and bruised on the outside but I can put some weight on it if I'm careful.",
+  "title": "24M. I rolled my ankle playing basketball last night. It's swollen and bruised on the outside but I…",
+  "inputSHA256": "ef08088fc4e333c9dd43be7643e210f70dd338e5c97e2031b49de40568f6a71d",
+  "physician": {
+    "acceptedBuckets": [
+      "ASYNC_PHYSICIAN"
+    ],
+    "priorAcceptedRoutes": [
+      "STANDARD_ASYNC"
+    ],
+    "source": "explicit_2026-09-15_physician_reassessment",
+    "note": "The physician retains clinician review. Some weight-bearing does not establish a negative Ottawa ankle assessment; rule eligibility and required criteria are not established by the message. This is not an asserted positive Ottawa result or a confirmed fracture."
+  },
+  "fable": {
+    "disposition": "SELF_CARE",
+    "rationale": "Lateral ankle sprain with swelling/bruising but able to bear weight; no red flags (deformity, inability to bear weight, numbness). RICE, elevation, OTC analgesics; seek care if unable to walk 4 steps, bony tenderness, or no improvement in several days.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FN",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C22-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C22-raw.json",
+    "escalation": "under"
+  },
+  "medgemma": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Injury requires medical evaluation but not emergent.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C22-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C22-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": true,
+  "v25": {
+    "disposition": "SELF_CARE",
+    "rationale": "Isolated lateral ankle inversion injury with swelling, bruising and preserved partial weight-bearing is consistent with a sprain manageable with self-care and a clear action-based safety net.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C22-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Ankle injury with swelling/bruising, able to bear weight carefully—non-urgent but requires evaluation for possible sprain/ligament injury.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C22-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C22-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C22-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Ankle injury with swelling/bruising, able to bear weight carefully—non-urgent but requires evaluation for possible sprain/ligament injury.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C22-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C22-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C22-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "SELF_CARE",
+    "rationale": "Symptoms suggest an ankle sprain, with some weight-bearing possible and no clear urgent red flags reported.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C22-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C22-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C22-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  },
+  "astra-max": {
+    "disposition": "SELF_CARE",
+    "rationale": "Likely ankle sprain with some weight bearing and no clear red flags reported. Inability to walk four steps or tenderness directly over bone warrants same-day assessment.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C22-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C22-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C22-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  }
+}

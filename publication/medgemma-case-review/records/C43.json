@@ -1,0 +1,126 @@
+{
+  "id": "C43",
+  "message": "34M. I've had a cough for about three weeks now with night sweats and I've lost maybe 10 pounds without trying. I moved here from a country where TB is common.",
+  "title": "34M. I've had a cough for about three weeks now with night sweats and I've lost maybe 10 pounds wit…",
+  "inputSHA256": "09068e1f6be344be3040d4eadc60eb24c36f9ae351e44d3b8b4cf5381af1f218",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": [
+      "SAME_DAY_IN_PERSON"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Three-week cough with night sweats, unintentional weight loss, and origin from a TB-endemic country is a classic presentation for active pulmonary tuberculosis, a public-health concern requiring prompt same-day evaluation, isolation precautions, and testing.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C43-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C43-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Symptoms (cough, night sweats, weight loss) + TB risk factor warrant urgent evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C43-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C43-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Three weeks of cough with night sweats and unintentional ~10 lb weight loss in a man who moved from a TB-endemic country needs same-day in-person chest imaging and sputum testing with airborne precautions, which messaging cannot provide.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "SAME_DAY_IN_PERSON",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C43-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Symptoms (cough, night sweats, weight loss) plus TB risk factors indicate possible active TB; requires urgent evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C43-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C43-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C43-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Symptoms (cough, night sweats, weight loss) plus TB risk factors indicate possible active TB; requires urgent evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C43-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C43-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C43-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Three-week cough, night sweats, unintentional weight loss, and TB risk warrant same-day in-person evaluation for possible active tuberculosis.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C43-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C43-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C43-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Prolonged cough, night sweats, weight loss, and TB exposure risk raise concern for potentially contagious pulmonary TB, requiring same-day in-person assessment and respiratory precautions.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C43-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C43-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C43-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

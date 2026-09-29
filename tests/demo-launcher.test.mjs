@@ -8,7 +8,7 @@ import test from "node:test";
 import { assertDemoPortAvailable, DEMO_URL, inspectDemoSetup, launchDemo, main } from "../scripts/demo.mjs";
 
 function fixture(t) {
-  const root = mkdtempSync(join(tmpdir(), "counsel-demo-launcher-"));
+  const root = mkdtempSync(join(tmpdir(), "goatnote-demo-launcher-"));
   t.after(() => rmSync(root, { recursive: true, force: true }));
   mkdirSync(join(root, "apps/evaluation/.next"), { recursive: true });
   writeFileSync(join(root, "apps/evaluation/.next/BUILD_ID"), "offline-fixture");
@@ -68,7 +68,7 @@ test("offline route needs no key, dependencies, build, port or server", async ()
   const output = [];
   const forbidden = () => { throw new Error("live dependency reached"); };
   assert.equal(await main(["--offline"], { root: "/saved/repo", output: (line) => output.push(line), inspect: forbidden, checkPort: forbidden, launch: forbidden }), 0);
-  assert.match(output.join("\n"), /counsel-disposition-take-home.pdf/);
+  assert.match(output.join("\n"), /medgemma-case-review/);
   assert.match(output.join("\n"), /no server, API key or new model calls/);
 });
 

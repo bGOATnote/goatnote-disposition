@@ -1,0 +1,126 @@
+{
+  "id": "C30",
+  "message": "36M. I got into poison ivy while clearing brush on Saturday. Itchy blistery rash on both forearms, spreading a bit within that area. No fever, no trouble breathing.",
+  "title": "36M. I got into poison ivy while clearing brush on Saturday. Itchy blistery rash on both forearms,…",
+  "inputSHA256": "9e1db2d0712a2fb3ee4a7542f19fb181102946b1ab059ac8f09063dde4b4b5bb",
+  "physician": {
+    "acceptedBuckets": [
+      "SELF_CARE"
+    ],
+    "priorAcceptedRoutes": [
+      "SELF_CARE"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "SELF_CARE",
+    "rationale": "Localized poison ivy contact dermatitis on forearms without fever, breathing difficulty, facial/genital involvement, or signs of infection; manageable with OTC hydrocortisone, calamine, oral antihistamines, cool compresses, and washing exposed skin/clothing. Escalate if rash spreads to face/eyes/genitals, becomes widespread, shows pus or worsening redness, or symptoms persist beyond 2-3 weeks.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C30-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C30-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "SELF_CARE",
+    "rationale": "Poison ivy rash, no systemic symptoms.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C30-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C30-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "URGENT_ESCALATION"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "SELF_CARE",
+    "rationale": "Localized itchy blistery rash confined to both forearms after a reported poison ivy exposure, with no reported fever or breathing trouble, is manageable with over-the-counter care and a clear worsening safety net.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C30-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Poison ivy reaction is non-urgent; patient stable with localized rash and no systemic or respiratory symptoms.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C30-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C30-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C30-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "over"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Poison ivy reaction is non-urgent; patient stable with localized rash and no systemic or respiratory symptoms.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C30-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C30-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C30-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "over"
+  },
+  "astra-xhigh": {
+    "disposition": "SELF_CARE",
+    "rationale": "Localized itchy, blistering rash after poison ivy exposure, with no reported fever, breathing difficulty, or other urgent warning signs.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C30-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C30-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C30-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "SELF_CARE",
+    "rationale": "Localized rash consistent with poison ivy dermatitis, without reported fever, breathing difficulty, or other urgent warning signs.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C30-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C30-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C30-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

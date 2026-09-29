@@ -6,9 +6,10 @@ import "./globals.css";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Counsel Physician Review Instrument",
-  description: "Blinded case-by-case physician reference authoring, comparison, and evaluation for a synthetic disposition workflow.",
+  title: "GOATnote Disposition",
+  description: "Independent synthetic-message classroom demonstration with a saved-output comparison viewer.",
   robots: { index: false, follow: false },
+  icons: { icon: "/goatnote-symbol.svg" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

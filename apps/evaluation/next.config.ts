@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
-  serverExternalPackages: ["@mastra/core", "@electric-sql/pglite", "@electric-sql/pglite-pgvector"],
+  serverExternalPackages: ["@mastra/core"],
   experimental: {
     externalDir: true,
   },

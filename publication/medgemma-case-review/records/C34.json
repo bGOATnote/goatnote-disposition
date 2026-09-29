@@ -1,0 +1,126 @@
+{
+  "id": "C34",
+  "message": "27F. My seasonal allergies are back — sneezing, itchy eyes, stuffy nose. What over the counter option do you recommend?",
+  "title": "27F. My seasonal allergies are back — sneezing, itchy eyes, stuffy nose. What over the counter opti…",
+  "inputSHA256": "6416cba039f20fbda8f35889bbc6afe941c08366d78db47d85b8af78f0f7e910",
+  "physician": {
+    "acceptedBuckets": [
+      "SELF_CARE"
+    ],
+    "priorAcceptedRoutes": [
+      "STANDARD_ASYNC"
+    ],
+    "source": "explicit_2026-09-15_physician_reassessment",
+    "note": "The physician corrects the prior ASYNC_PHYSICIAN reference to SELF_CARE. The correction assesses disposition, not the accuracy or completeness of a medication recommendation."
+  },
+  "fable": {
+    "disposition": "SELF_CARE",
+    "rationale": "Typical seasonal allergy symptoms in a healthy 27-year-old with no red flags; OTC antihistamines (e.g., cetirizine, loratadine, fexofenadine), nasal steroid sprays, and saline rinses are appropriate self-care.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C34-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C34-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Medication recommendation request.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C34-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C34-raw.json",
+    "escalation": "over"
+  },
+  "csv": {
+    "disposition": "SELF_CARE"
+  },
+  "dispositionDisagrees": true,
+  "v25": {
+    "disposition": null,
+    "rationale": null,
+    "failure": "CLINICIAN_REVIEW_REQUIRED",
+    "agrees": false,
+    "clinicianAction": "FAILED_OUTPUT_NEGATIVE_REFERENCE",
+    "urgentAction": "FAILED_OUTPUT_NEGATIVE_REFERENCE",
+    "status": "incomplete",
+    "originalDisposition": null,
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C34-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "incomplete"
+  },
+  "nano-r1": {
+    "disposition": "SELF_CARE",
+    "rationale": "Symptoms consistent with allergic rhinitis; appropriate for OTC antihistamines or nasal sprays without need for urgent intervention.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C34-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C34-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C34-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "SELF_CARE",
+    "rationale": "Symptoms consistent with allergic rhinitis; appropriate for OTC antihistamines or nasal sprays without need for urgent intervention.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C34-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C34-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C34-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "SELF_CARE",
+    "rationale": "Typical seasonal allergy symptoms without reported red flags; appropriate for over-the-counter treatment.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C34-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C34-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C34-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "SELF_CARE",
+    "rationale": "Symptoms are consistent with seasonal allergies, with no reported red flags; OTC treatment and self-care are appropriate.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C34-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C34-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C34-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

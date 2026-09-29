@@ -1,0 +1,133 @@
+{
+  "id": "C08",
+  "message": "35F. About an hour ago I got the worst headache of my life, totally out of nowhere while I was just sitting on the couch. It hit like a thunderclap. My neck feels a bit stiff now too.",
+  "title": "35F. About an hour ago I got the worst headache of my life, totally out of nowhere while I was just…",
+  "inputSHA256": "30c31683c0c03b5a432fcd86d71ac7ae66522a79b2f948dad068a99f33c18447",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": [
+      "EMERGENCY_NOW"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Sudden-onset 'worst headache of my life' (thunderclap) with new neck stiffness is a red flag for subarachnoid hemorrhage or meningitis; requires immediate emergency evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C08-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C08-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Thunderclap headache with neck stiffness raises concern for subarachnoid hemorrhage.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C08-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C08-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Sudden thunderclap headache described as the worst of her life about an hour ago with new neck stiffness requires immediate emergency evaluation for subarachnoid hemorrhage or meningitis, which needs urgent imaging and possible lumbar puncture.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "EMERGENCY_NOW",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C08-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [
+      {
+        "originalDisposition": "EMERGENCY_NOW",
+        "disposition": "URGENT_ESCALATION",
+        "directive": "Call 911 now. Do not drive yourself or wait for a message reply.",
+        "label": "Issued early action; not a completed release"
+      }
+    ],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Sudden 'thunderclap' headache with neck stiffness raises concern for possible subarachnoid hemorrhage or meningitis; requires urgent medical evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C08-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C08-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C08-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Sudden 'thunderclap' headache with neck stiffness raises concern for possible subarachnoid hemorrhage or meningitis; requires urgent medical evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C08-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C08-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C08-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Sudden thunderclap headache with neck stiffness could indicate bleeding around the brain. Call emergency services now; do not drive yourself.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C08-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C08-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C08-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "A sudden worst-ever thunderclap headache with neck stiffness could indicate a brain bleed. Call emergency services now.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C08-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C08-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C08-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

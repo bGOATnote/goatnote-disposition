@@ -1,0 +1,126 @@
+{
+  "id": "C32",
+  "message": "My 8-year-old says her right ear has hurt since last night. No fever, she ate breakfast fine and went to school.",
+  "title": "My 8-year-old says her right ear has hurt since last night. No fever, she ate breakfast fine and we…",
+  "inputSHA256": "8a7e21b8bb719aae31ebc7cd0fa5444c07f396591dab97cf4145e4ce6e29fca1",
+  "physician": {
+    "acceptedBuckets": [
+      "SELF_CARE"
+    ],
+    "priorAcceptedRoutes": [
+      "STANDARD_ASYNC"
+    ],
+    "source": "explicit_2026-09-15_physician_reassessment",
+    "note": "The physician corrects the prior ASYNC_PHYSICIAN reference to SELF_CARE with watchful waiting. This label does not independently establish that every model rationale supplies adequate observation, follow-up, and escalation conditions."
+  },
+  "fable": {
+    "disposition": "SELF_CARE",
+    "rationale": "Mild unilateral ear pain <48 hours in an 8-year-old, no fever, eating and attending school normally—no red flags. Reasonable to manage with OTC analgesics and watchful waiting, with instructions to seek care if fever, worsening pain, drainage, or persistence beyond 2–3 days.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C32-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C32-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Ear pain without fever or other red flags.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C32-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C32-raw.json",
+    "escalation": "over"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": true,
+  "v25": {
+    "disposition": "SELF_CARE",
+    "rationale": "An 8-year-old with right ear pain since last night, no fever, eating normally and attending school fits mild, commonly self-limited ear pain that can be managed with home comfort measures and clear return triggers.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C32-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Ear pain without fever or systemic symptoms is typically non-urgent but warrants evaluation; appropriate for asynchronous physician follow-up.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C32-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C32-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C32-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "over"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Ear pain without fever or systemic symptoms is typically non-urgent but warrants evaluation; appropriate for asynchronous physician follow-up.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C32-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C32-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C32-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "over"
+  },
+  "astra-xhigh": {
+    "disposition": "SELF_CARE",
+    "rationale": "Brief ear pain without fever or reduced eating/activity supports initial home care and monitoring. Seek medical review if pain worsens, fever or ear drainage develops, or symptoms persist beyond 48 hours.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C32-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C32-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C32-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "SELF_CARE",
+    "rationale": "Recent ear pain with normal eating/activity and no reported red flags supports initial home care and monitoring; seek evaluation if worsening or lasting over 48 hours.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C32-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C32-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C32-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

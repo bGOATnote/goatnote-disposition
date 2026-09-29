@@ -1,0 +1,133 @@
+{
+  "id": "C41",
+  "message": "My 6-year-old has a fever of 103 and I just noticed purple spots on his legs that don't fade when I press on them. He seems very sleepy.",
+  "title": "My 6-year-old has a fever of 103 and I just noticed purple spots on his legs that don't fade when I…",
+  "inputSHA256": "386d8473737fad7fb0929a5efde1525bd9492ef314203d263f7913e265e7b84d",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": [
+      "EMERGENCY_NOW"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "High fever with non-blanching purpuric rash and lethargy in a child is a red flag for meningococcal sepsis/meningitis; needs emergency evaluation immediately.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C41-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C41-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "High fever, non-blanching rash (petechiae), and lethargy in a child are red flags for serious illness requiring immediate attention.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C41-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C41-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "URGENT_ESCALATION"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "A 6-year-old with reported fever of 103, a non-blanching purple rash on the legs and marked sleepiness raises immediate concern for meningococcal sepsis or bacterial meningitis requiring emergency assessment and IV treatment now.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "EMERGENCY_NOW",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C41-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [
+      {
+        "originalDisposition": "EMERGENCY_NOW",
+        "disposition": "URGENT_ESCALATION",
+        "directive": "Call 911 now. Do not drive yourself or wait for a message reply.",
+        "label": "Issued early action; not a completed release"
+      }
+    ],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Fever + non-blanching rash + lethargy in child indicates possible meningococcemia/sepsis; requires immediate medical evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C41-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C41-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C41-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Fever + non-blanching rash + lethargy in child indicates possible meningococcemia/sepsis; requires immediate medical evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C41-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C41-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C41-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "High fever, purple spots that do not fade with pressure, and unusual sleepiness can indicate a life-threatening infection such as sepsis or meningitis. Call emergency services now.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C41-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C41-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C41-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Fever, non-blanching purple spots, and unusual sleepiness can signal life-threatening sepsis or meningitis. Call emergency services now.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C41-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C41-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C41-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

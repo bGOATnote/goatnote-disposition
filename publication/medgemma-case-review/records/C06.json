@@ -1,0 +1,126 @@
+{
+  "id": "C06",
+  "message": "Could I get a refill on my losartan? I've been on 50mg once a day for about 2 years, my blood pressure is well controlled, last home reading was 122/78.",
+  "title": "Could I get a refill on my losartan? I've been on 50mg once a day for about 2 years, my blood press…",
+  "inputSHA256": "8c70d1536a066e9ee571355a02171145268c655586bf746bf45235924646cced",
+  "physician": {
+    "acceptedBuckets": [
+      "ASYNC_PHYSICIAN"
+    ],
+    "priorAcceptedRoutes": [
+      "STANDARD_ASYNC"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Routine refill request for long-term losartan with well-controlled blood pressure and no red-flag symptoms; appropriate for asynchronous physician review and prescription renewal.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C06-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C06-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Routine medication refill request with stable vitals.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C06-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C06-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "URGENT_ESCALATION"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": null,
+    "rationale": null,
+    "failure": "CLINICIAN_REVIEW_REQUIRED",
+    "agrees": false,
+    "clinicianAction": "FN_FAILED_OUTPUT",
+    "urgentAction": "FAILED_OUTPUT_NEGATIVE_REFERENCE",
+    "status": "incomplete",
+    "originalDisposition": null,
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C06-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "incomplete"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Medication refill request with stable condition and no urgent symptoms.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C06-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C06-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C06-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Medication refill request with stable condition and no urgent symptoms.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C06-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C06-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C06-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Routine losartan refill request with well-controlled blood pressure and no reported emergency or same-day red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C06-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C06-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C06-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Routine losartan refill request with well-controlled blood pressure and no reported emergency or same-day red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C06-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C06-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C06-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

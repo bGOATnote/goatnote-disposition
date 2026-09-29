@@ -11,7 +11,7 @@ export function createStrippedHandler(execute: (message: string) => Promise<Stri
     const url = new URL(request.url);
     if (!/^http:\/\/(localhost|127\.0\.0\.1):\d+$/.test(url.origin)
       || request.headers.get("host") !== url.host || request.headers.get("origin") !== url.origin
-      || request.headers.get("x-counsel-review") !== "local-v1"
+      || request.headers.get("x-goatnote-review") !== "local-v1"
       || (request.headers.has("sec-fetch-site") && request.headers.get("sec-fetch-site") !== "same-origin")) return fail("Local, same-origin requests are required.", 403);
     if (active >= 2) return fail("Two calls are already running. Wait for one to finish.", 429);
     if (request.headers.get("content-type")?.split(";")[0] !== "application/json") return fail("JSON is required.", 400);

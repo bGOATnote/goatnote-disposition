@@ -1,0 +1,126 @@
+{
+  "id": "C18",
+  "message": "Can I refill my albuterol inhaler? I use it maybe once a week, no bad attacks recently.",
+  "title": "Can I refill my albuterol inhaler? I use it maybe once a week, no bad attacks recently.",
+  "inputSHA256": "cbe6f232c4c0ff05b0f6fb8fb11faf709c394930b7337fe294ac7e88fd9f4c4c",
+  "physician": {
+    "acceptedBuckets": [
+      "ASYNC_PHYSICIAN"
+    ],
+    "priorAcceptedRoutes": [
+      "STANDARD_ASYNC"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Routine albuterol refill request with stable, infrequent use and no recent exacerbations; no red flags requiring same-day escalation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C18-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C18-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Routine medication refill request.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C18-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C18-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": null,
+    "rationale": null,
+    "failure": "CLINICIAN_REVIEW_REQUIRED",
+    "agrees": false,
+    "clinicianAction": "FN_FAILED_OUTPUT",
+    "urgentAction": "FAILED_OUTPUT_NEGATIVE_REFERENCE",
+    "status": "incomplete",
+    "originalDisposition": null,
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C18-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "incomplete"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Medication refill request for maintenance inhaler with mild usage and no acute symptoms; appropriate for asynchronous physician follow-up.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C18-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C18-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C18-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Medication refill request for maintenance inhaler with mild usage and no acute symptoms; appropriate for asynchronous physician follow-up.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C18-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C18-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C18-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Albuterol refill request with infrequent use and no reported emergency or same-day red flags.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C18-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C18-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C18-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Albuterol refill request with infrequent use and no urgent red flags reported.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C18-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C18-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C18-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

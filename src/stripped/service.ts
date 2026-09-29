@@ -10,14 +10,14 @@ function repositoryRoot() {
   let current = resolve(process.cwd());
   for (;;) {
     const file = join(current, "package.json");
-    if (existsSync(file) && JSON.parse(readFileSync(file, "utf8")).name === "counselcodex") return current;
+    if (existsSync(file) && JSON.parse(readFileSync(file, "utf8")).name === "goatnote-disposition") return current;
     const parent = dirname(current);
-    if (parent === current) throw new Error("Counsel repository root not found");
+    if (parent === current) throw new Error("GOATnote Disposition repository root not found");
     current = parent;
   }
 }
 
-// A separate $2 demo allowance within the $71.35035 reconciled balance on Sept 15.
+// A separate $2 local demonstration allowance for this classroom edition.
 // Started requests reserve their worst-case cost until a completion is persisted.
 const ALLOWANCE_USD = 2;
 export async function executeStripped(message: string): Promise<StrippedRun> {

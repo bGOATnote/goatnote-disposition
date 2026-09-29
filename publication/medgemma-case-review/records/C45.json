@@ -1,0 +1,126 @@
+{
+  "id": "C45",
+  "message": "25F. I got my STI panel results in the portal and I don't understand what one of the values means. Can someone explain?",
+  "title": "25F. I got my STI panel results in the portal and I don't understand what one of the values means.…",
+  "inputSHA256": "e660f563712f02e5c16d7b6596cd72ef3770f3d74a7826d9ab2c8bd76745fab2",
+  "physician": {
+    "acceptedBuckets": [
+      "ASYNC_PHYSICIAN"
+    ],
+    "priorAcceptedRoutes": [
+      "STANDARD_ASYNC"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Patient requests interpretation of STI panel results; requires clinician review and explanation but no emergency red flags present.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C45-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C45-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Patient needs explanation of lab results, not urgent.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C45-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C45-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "A 25-year-old asks for interpretation of a specific STI panel value, which requires a clinician to review the actual result and advise on any treatment, without any reported symptoms requiring in-person assessment.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "STANDARD_ASYNC",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C45-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Patient seeks clarification on a lab result; appropriate for asynchronous clinician response.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C45-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C45-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C45-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Patient seeks clarification on a lab result; appropriate for asynchronous clinician response.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C45-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C45-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C45-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "STI results can be reviewed and explained by a clinician asynchronously; no urgent symptoms are reported.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C45-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C45-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C45-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "STI result interpretation is appropriate for asynchronous clinician review; no urgent symptoms or red flags reported.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C45-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C45-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C45-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

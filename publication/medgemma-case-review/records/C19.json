@@ -1,0 +1,133 @@
+{
+  "id": "C19",
+  "message": "I've been dizzy on and off for a few days. The room spins when I roll over or turn my head in bed, but it settles. No chest pain, no weakness, no headache.",
+  "title": "I've been dizzy on and off for a few days. The room spins when I roll over or turn my head in bed,…",
+  "inputSHA256": "15d311ec2d50bccf3b68805cd6e6cf868456c13751d3a945e0d117acab84ebba",
+  "physician": {
+    "acceptedBuckets": [
+      "ASYNC_PHYSICIAN"
+    ],
+    "priorAcceptedRoutes": [
+      "STANDARD_ASYNC"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Positional vertigo pattern consistent with BPPV without red flags (no chest pain, weakness, headache, or neuro symptoms); non-urgent but warrants clinician evaluation for diagnosis and treatment guidance.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C19-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C19-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Dizziness without red flags (chest pain, weakness, headache) warrants physician review, but not immediate escalation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TN",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C19-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C19-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "SELF_CARE"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": null,
+    "rationale": null,
+    "failure": "CLINICIAN_REVIEW_REQUIRED",
+    "agrees": false,
+    "clinicianAction": "FN_FAILED_OUTPUT",
+    "urgentAction": "FAILED_OUTPUT_NEGATIVE_REFERENCE",
+    "status": "incomplete",
+    "originalDisposition": null,
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C19-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [
+      {
+        "originalDisposition": "SAME_DAY_IN_PERSON",
+        "disposition": "URGENT_ESCALATION",
+        "directive": "Arrange an in-person assessment today. Do not wait for an asynchronous reply.",
+        "label": "Issued early action; not a completed release"
+      }
+    ],
+    "escalation": "incomplete"
+  },
+  "nano-r1": {
+    "disposition": "SELF_CARE",
+    "rationale": "Symptoms are non-urgent and likely benign positional vertigo; patient has no red flags requiring immediate medical escalation.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C19-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C19-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C19-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  },
+  "nano-r2": {
+    "disposition": "SELF_CARE",
+    "rationale": "Symptoms are non-urgent and likely benign positional vertigo; patient has no red flags requiring immediate medical escalation.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C19-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C19-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C19-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  },
+  "astra-xhigh": {
+    "disposition": "SELF_CARE",
+    "rationale": "Position-triggered spinning that settles suggests benign positional vertigo, with no reported emergency red flags.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C19-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C19-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C19-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  },
+  "astra-max": {
+    "disposition": "SELF_CARE",
+    "rationale": "Position-triggered spinning that settles suggests benign positional vertigo, with no reported emergency warning signs.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "FN",
+    "urgentAction": "TN",
+    "status": "complete",
+    "originalDisposition": "SELF_CARE",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C19-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C19-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C19-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  }
+}

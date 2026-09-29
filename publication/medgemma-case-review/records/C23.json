@@ -1,0 +1,133 @@
+{
+  "id": "C23",
+  "message": "60M. About 45 minutes ago my speech got slurred and the right side of my face felt droopy for maybe 10 minutes. It's back to normal now so I figured it was nothing, but wanted to check.",
+  "title": "60M. About 45 minutes ago my speech got slurred and the right side of my face felt droopy for maybe…",
+  "inputSHA256": "fafcc12a29fc8d5d9ca0b4cf6f77ed95ee50eaa5069ea54da237a99132d04b6b",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": [
+      "EMERGENCY_NOW"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Transient slurred speech and facial droop in a 60-year-old is a probable TIA; symptoms resolving does not rule out impending stroke. Needs emergency evaluation now (call 911/ED).",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C23-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C23-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Symptoms suggestive of TIA (transient ischemic attack), requires immediate evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C23-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C23-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "A 60-year-old reports sudden slurred speech and right facial droop about 45 minutes ago lasting roughly 10 minutes, a transient focal neurological deficit that requires immediate emergency evaluation despite resolution.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "EMERGENCY_NOW",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C23-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [
+      {
+        "originalDisposition": "EMERGENCY_NOW",
+        "disposition": "URGENT_ESCALATION",
+        "directive": "Call 911 now. Do not drive yourself or wait for a message reply.",
+        "label": "Issued early action; not a completed release"
+      }
+    ],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Transient speech changes and facial droop are classic stroke warning signs; even though symptoms resolved, they indicate a possible cerebrovascular event requiring urgent evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C23-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C23-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C23-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Transient speech changes and facial droop are classic stroke warning signs; even though symptoms resolved, they indicate a possible cerebrovascular event requiring urgent evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C23-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C23-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C23-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Sudden slurred speech and one-sided facial droop can indicate a TIA or stroke, even after symptoms resolve. Call emergency services now; do not drive yourself.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C23-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C23-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C23-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Sudden slurred speech and one-sided facial droop can signal a TIA or stroke, even after resolving. Call emergency services now; do not drive yourself.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C23-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C23-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C23-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

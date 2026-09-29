@@ -1,0 +1,126 @@
+{
+  "id": "C04",
+  "message": "62F, I'm diabetic. I got a small cut on the bottom of my foot about 4 days ago and now the skin around it is red and a little swollen. No fever. It's tender when I press on it.",
+  "title": "62F, I'm diabetic. I got a small cut on the bottom of my foot about 4 days ago and now the skin aro…",
+  "inputSHA256": "4d307ea5fff71d10992dfebb600c1d805c5bbc88fef2a39c94515cf4eb8855d1",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": [
+      "SAME_DAY_IN_PERSON"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Diabetic foot wound with spreading redness, swelling, and tenderness suggests developing infection/cellulitis; diabetic foot infections can progress rapidly and require same-day in-person evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C04-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C04-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Diabetic patient with foot wound showing signs of infection (redness, swelling, tenderness) requires prompt evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C04-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C04-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": null,
+    "rationale": null,
+    "failure": "Unbound gates-only release.",
+    "agrees": false,
+    "clinicianAction": "FN_FAILED_OUTPUT",
+    "urgentAction": "FN_FAILED_OUTPUT",
+    "status": "incomplete",
+    "originalDisposition": null,
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-live-2026-09-15/C04-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "incomplete"
+  },
+  "nano-r1": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Chronic diabetic patient with localized foot wound showing signs of infection (redness, swelling, tenderness) but no systemic symptoms; requires evaluation and possible management.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "TP",
+    "urgentAction": "FN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C04-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C04-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C04-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  },
+  "nano-r2": {
+    "disposition": "ASYNC_PHYSICIAN",
+    "rationale": "Chronic diabetic patient with localized foot wound showing signs of infection (redness, swelling, tenderness) but no systemic symptoms; requires evaluation and possible management.",
+    "failure": null,
+    "agrees": false,
+    "clinicianAction": "TP",
+    "urgentAction": "FN",
+    "status": "complete",
+    "originalDisposition": "ASYNC_PHYSICIAN",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C04-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C04-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C04-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "under"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "A red, swollen, tender foot wound in someone with diabetes may be infected and needs same-day in-person evaluation, even without fever.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C04-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C04-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C04-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Redness, swelling, and tenderness around a diabetic foot wound suggest possible infection requiring same-day in-person assessment, even without fever.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C04-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C04-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C04-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "id": "C12",
+  "message": "68F with COPD. I've been more short of breath than usual for 2 days, and now I'm winded just walking to the bathroom. My phlegm has turned green.",
+  "title": "68F with COPD. I've been more short of breath than usual for 2 days, and now I'm winded just walkin…",
+  "inputSHA256": "76698f74d90715201a8bf80ae633d162145a0fea59c2639871a02a6db86ce5c4",
+  "physician": {
+    "acceptedBuckets": [
+      "URGENT_ESCALATION"
+    ],
+    "priorAcceptedRoutes": [
+      "EMERGENCY_NOW"
+    ],
+    "source": "mapped_v2_carried_forward",
+    "note": null
+  },
+  "fable": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "68-year-old with COPD showing signs of acute exacerbation: worsening dyspnea over 2 days now limiting minimal exertion (bathroom), plus purulent green sputum suggesting infection. Progressive breathlessness at minimal activity is a same-day red flag requiring prompt evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-fable-2026-09-15/C12-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-fable-2026-09-15/C12-raw.json",
+    "escalation": "aligned"
+  },
+  "medgemma": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Worsening SOB, increased phlegm production, and green phlegm in a COPD patient suggest a possible exacerbation requiring prompt evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "parsedPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C12-parsed.json",
+    "rawPath": "outputs/stripped-3bucket-medgemma-27b-q5-2026-09-16/C12-raw.json",
+    "escalation": "aligned"
+  },
+  "csv": {
+    "disposition": "ASYNC_PHYSICIAN"
+  },
+  "dispositionDisagrees": false,
+  "v25": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "A 68-year-old with COPD reporting two days of worsening breathlessness now occurring on minimal exertion with newly purulent sputum needs hands-on assessment today — oxygen saturation, lung exam and chest imaging cannot be done by message.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "SAME_DAY_IN_PERSON",
+    "artifactPaths": {
+      "run": "outputs/v25-path-b-complete-2026-09-15/C12-run.json",
+      "scorecard": "outputs/v25-path-b-complete-2026-09-15/scorecard.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r1": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "COPD exacerbation with worsening dyspnea, functional limitation, and purulent sputum suggests acute infection requiring prompt medical evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C12-nano-baseline-r1.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C12-nano-baseline-r1.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C12-nano-baseline-r1.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "nano-r2": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "COPD exacerbation with worsening dyspnea, functional limitation, and purulent sputum suggests acute infection requiring prompt medical evaluation.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/workflow-aware-disposition-2026-09-16/study/requests/known-C12-nano-baseline-r2.json",
+      "raw": "outputs/workflow-aware-disposition-2026-09-16/study/raw/known-C12-nano-baseline-r2.json",
+      "parsed": "outputs/workflow-aware-disposition-2026-09-16/study/parsed/known-C12-nano-baseline-r2.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-xhigh": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Worsening breathlessness with minimal activity in COPD, along with green sputum, warrants urgent same-day evaluation for an exacerbation or infection.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C12-request.json",
+      "raw": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C12-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-xhigh-2026-09-15/C12-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  },
+  "astra-max": {
+    "disposition": "URGENT_ESCALATION",
+    "rationale": "Worsening breathlessness with minimal activity in COPD, plus new green sputum, warrants urgent same-day evaluation for a possible exacerbation or infection.",
+    "failure": null,
+    "agrees": true,
+    "clinicianAction": "TP",
+    "urgentAction": "TP",
+    "status": "complete",
+    "originalDisposition": "URGENT_ESCALATION",
+    "artifactPaths": {
+      "request": "outputs/stripped-3bucket-astra-max-2026-09-15/C12-request.json",
+      "raw": "outputs/stripped-3bucket-astra-max-2026-09-15/C12-raw.json",
+      "parsed": "outputs/stripped-3bucket-astra-max-2026-09-15/C12-parsed.json"
+    },
+    "earlyActions": [],
+    "escalation": "aligned"
+  }
+}

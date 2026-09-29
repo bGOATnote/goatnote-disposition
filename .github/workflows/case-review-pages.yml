@@ -39,7 +39,7 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Verify saved data and generated HTML without inference
-        run: node --experimental-strip-types scripts/build-medgemma-case-review.mjs --verify
+        run: npm run saved:verify
       - name: Reject a superseded main revision
         env:
           GH_TOKEN: ${{ github.token }}
@@ -48,11 +48,7 @@ jobs:
       - name: Prepare the static review files only
         run: |
           mkdir -p "$RUNNER_TEMP/case-review-site"
-          for file in index.html roadmap.html manifest.json README.md; do
-            test -f "publication/medgemma-case-review/$file"
-            test ! -L "publication/medgemma-case-review/$file"
-            install -m 644 "publication/medgemma-case-review/$file" "$RUNNER_TEMP/case-review-site/$file"
-          done
+          cp -R publication/medgemma-case-review/. "$RUNNER_TEMP/case-review-site/"
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
         with:
           path: ${{ runner.temp }}/case-review-site
