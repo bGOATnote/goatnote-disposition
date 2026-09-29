@@ -1,7 +1,6 @@
 name: Publish saved case review
 
 on:
-  workflow_dispatch:
   workflow_run:
     workflows: [CI]
     types: [completed]
@@ -17,42 +16,22 @@ concurrency:
 jobs:
   prepare:
     if: >-
-      (github.event_name == 'workflow_dispatch' &&
-       github.ref == 'refs/heads/codex/goatnote-classroom-rebrand' &&
-       github.repository == 'bGOATnote/goatnote-disposition') ||
-      (github.event_name == 'workflow_run' &&
-       github.event.workflow_run.conclusion == 'success' &&
-       github.event.workflow_run.head_branch == 'main' &&
-       github.event.workflow_run.head_repository.full_name == github.repository &&
-       (github.event.workflow_run.event == 'push' || github.event.workflow_run.event == 'workflow_dispatch'))
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main' &&
+      github.event.workflow_run.head_repository.full_name == github.repository &&
+      (github.event.workflow_run.event == 'push' || github.event.workflow_run.event == 'workflow_dispatch')
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
       contents: read
       pages: read
-      actions: read
     env:
       MASTRA_TELEMETRY_DISABLED: "true"
-      PUBLISH_SHA: ${{ github.event_name == 'workflow_dispatch' && github.sha || github.event.workflow_run.head_sha }}
-      PUBLISH_BRANCH: ${{ github.event_name == 'workflow_dispatch' && github.ref_name || github.event.workflow_run.head_branch }}
+      PUBLISH_SHA: ${{ github.event.workflow_run.head_sha }}
     steps:
-      - name: Require successful CI for the manually requested revision
-        if: github.event_name == 'workflow_dispatch'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          if ! gh api --method GET "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs" \
-            -f head_sha="$PUBLISH_SHA" -f branch="$PUBLISH_BRANCH" -f status=success -f per_page=100 \
-            | jq -e --arg sha "$PUBLISH_SHA" --arg branch "$PUBLISH_BRANCH" --arg repo "$GITHUB_REPOSITORY" \
-              'any(.workflow_runs[]; .head_sha == $sha and .head_branch == $branch and
-                .head_repository.full_name == $repo and .conclusion == "success" and
-                (.event == "push" or .event == "workflow_dispatch"))' > /dev/null; then
-            echo "::error::Run CI successfully at $PUBLISH_SHA on $PUBLISH_BRANCH before manual publishing."
-            exit 1
-          fi
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: ${{ env.PUBLISH_SHA }}
+          ref: ${{ github.event.workflow_run.head_sha }}
           persist-credentials: false
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
@@ -61,10 +40,10 @@ jobs:
       - run: npm ci
       - name: Verify saved data and generated HTML without inference
         run: npm run saved:verify
-      - name: Reject a superseded branch revision
+      - name: Reject a superseded main revision
         env:
           GH_TOKEN: ${{ github.token }}
-        run: test "$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/$PUBLISH_BRANCH" --jq .object.sha)" = "$PUBLISH_SHA"
+        run: test "$(gh api "repos/$GITHUB_REPOSITORY/commits/main" --jq .sha)" = "$PUBLISH_SHA"
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Prepare the static review files only
         run: |
