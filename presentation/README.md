@@ -21,9 +21,13 @@ programs inform the proposed outcomes. An exact public BIOM 7109/8109 syllabus
 was not verified. Sources and benchmark configurations appear in the speaker
 notes and the [frontier evidence note](../docs/FRONTIER_MODELS.md).
 
-The editable deck retains the supplied presentation's canvas, typography and
-presenter-supplied photographs, with official GOATnote branding. Other people's
-names have been removed from slides and notes. C22 discussion images are
+The editable deck retains the supplied presentation's canvas and selected
+photographs, with official GOATnote branding. It uses Montserrat throughout.
+Four idea titles use teal, blue, amber and magenta. Slides omit personal names,
+course labels and page numbers. ScribeGOAT2 and LostBench each appear in one
+brief caption; HealthCraft is an optional note. Install
+[Montserrat](https://fonts.google.com/specimen/Montserrat) on another computer
+if its presentation app does not provide that font. C22 discussion images are
 explicitly separate from the synthetic case and do not establish its outcome.
 The original supplied file and frozen research records were not modified.
 
@@ -32,4 +36,6 @@ results are descriptive development observations. Neither establishes a patient
 failure rate. The urgent endpoint in the local three-bucket protocol includes
 urgent/same-day escalation, not a uniform emergency timing requirement.
 
-Revised September 28, 2026, with Codex assistance in research, editing and layout.
+Revised from the presenter's updated, image-led attachment, with Codex assistance
+in editing and layout. The four section questions connect error rates, evidence,
+acceptance checks and verifiable student work.

@@ -1,5 +1,16 @@
 # Classroom edition verification
 
+## Four-idea presentation revision
+
+The presenter's updated attachment is the source for the revised 16-slide
+presentation. It uses Montserrat, four distinct idea colors and title slides,
+with no personal-name/course/page-number labels. Both native tables remain
+editable. The final package passed structural and geometry validation, was
+re-imported and rendered, and every slide was visually reviewed. The final
+text/notes scan found no personal-name or course-code labels, and every visible
+text run uses Montserrat. ScribeGOAT2 and LostBench each appear once in a brief
+caption; HealthCraft stays in notes. Clinical projection files were unchanged.
+
 ## September 28, 2026 — classroom attribution and evidence note
 
 Updated the public introduction, live footer and saved-viewer attribution to
