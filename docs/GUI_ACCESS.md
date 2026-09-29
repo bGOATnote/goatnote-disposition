@@ -4,6 +4,19 @@ The [saved case viewer](../publication/medgemma-case-review/index.html) opens
 directly in a browser without dependencies, a server or API key. It displays
 historical outputs in a branded classroom derivative and makes no model calls.
 
+## Open all 50 saved cases
+
+In a downloaded classroom package or repository checkout, open
+`publication/medgemma-case-review/index.html` with Chrome, Safari, Edge or Firefox.
+Extract the ZIP first and keep the viewer folder together. The index lists all
+50 cases; select a case to see its message, references and recorded responses.
+No installation, API key or live-model submission is needed.
+
+If a link opens HTML source on GitHub, download the classroom edition and open
+the extracted HTML file in your browser. GitHub's file preview does not run the
+interactive viewer. A slide stored in `presentation/` can link to the bundled
+viewer with `../publication/medgemma-case-review/index.html#index`.
+
 ## Run the live application
 
 From the repository root, use Node 22.18.0 (the `.nvmrc` version), or another
